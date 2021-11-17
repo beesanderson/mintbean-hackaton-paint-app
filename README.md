@@ -8,22 +8,25 @@ My teams original plan was to do this project in React with the `<canvas>` appro
 
 - Event End Date - 11/23/2021
 
-
+I used this [CodePen](https://codepen.io/HarryGateaux/pen/BApxl) as the original root of this project to see how it worked. It is currently saved in its own folder `/codepen` but I doubt I will keep it for the entirety of the project. 
 
 
 
 ## The Hackathon Instructions: 
 These are the [instructions](https://mintbean.io/meets/cfa4fa54-c706-4c51-a04f-671f6686f9fd/resources) for the Mintbean Hackathon Hiring Event. The following are links for inspiration and visuals of what the project fundamental code structure options are.
 
+- Reality of situation: I am completely unqualified to partake in this challenge...so let's do it :) 
 
-## Code Pen Link: HTML5 Drawing Pad
-This is the link of the original project root copied and pasted for comprehension and to mess with the code, perhaps for reason of reverse engineering? 
+
+### Code Pen Link: HTML5 Drawing Pad
 https://codepen.io/HarryGateaux/pen/BApxl 
 
-## Drawing From Dots
+
+
+### Drawing From Dots
 https://codepen.io/cftflora/pen/xdAIw
 
-## SVG Coloring Book
+### SVG Coloring Book
 https://codepen.io/tigt/pen/xZEdoP
 
 
@@ -54,13 +57,13 @@ I think I will be capable to figure this out on my own considering what all I've
 
 # To Do: 
 
-## "Boiler Plate" Paint Code
+### "Boiler Plate" Paint Code
 - Absolute MVP basics
     - Does it run? 
     - Does it check all project guidelines?
     - Check off as completed once done.
 
-## Project Landing Page 
+### Project Landing Page 
 - Design is important here! Might want to allocate some extra time to make sure you have a wow factor for this *especially* in the case of project just being boiler plate code. 
     - Does it describe my application?
     - Does it explain the project's features?
@@ -68,6 +71,33 @@ I think I will be capable to figure this out on my own considering what all I've
         - My love of screen snips may shine here for once lol 
     - Does it have an obvious and clear button link to my **live** application?
     - Does it have a "*Meet the Engineers*" (aka meeeeeeee lol) section that shows a photo of myself and link to my [GitHub](https://github.com/beesanderson?tab=repositories), [LinkedIn](https://www.linkedin.com/in/bridgette-s-261410223/), and, [Twitter](https://twitter.com/beesanderson999)?
-        - Consult [Mintbean Hackathon Guide](https://info.mintbean.io/hiring-hackathon-guide) in the "*Great examples of landing pages from our past hackathons:*" section. \
+        - Consult [Mintbean Hackathon Guide](https://info.mintbean.io/hiring-hackathon-guide) in the "*Great examples of landing pages from our past hackathons:*" section. 
     - Check off as completed once done.
+
+
+
+## Resources: 
+[JavaScript30.com](https://javascript30.com/) From Samantha Tarrice 
+- In particular, challenge 8 is working on canvas
+
+[Simple Paint App](https://www.youtube.com/watch?v=EQFibzKT_WE) From Jasmine Reese 
+- Super basic YouTube video that walks you through the bare bones basics. 
+
+[Create a Drawing App in JS DEV Community](https://dev.to/0shuvo0/lets-create-a-drawing-app-with-js-4ej3) from Jasmine Reese
+- Haven't investigated yet but looks super useful!
+
+[FontAwesome Icons](https://fontawesome.com/v5.15/icons?d=gallery&p=2&c=design&m=free) from  Jami Schwarzwalder
+- An awesome list of all the icons that could or would be used for such a project.
+
+[MDN Canvas Rending Context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation) from Samantha Tarrice 
+- Another useful MDN link though it may possibly be the same one that my original teammate, Rohit Jacob, and I were originally researching from.
+
+
+
+# Day by day notes...
+
+### Day 2 - 11/17/2021
+
+I am starting the tutorial Samantha sent me from [JavaScript30.com](https://courses.wesbos.com/account/access/61946b0b41ee9b1bad8e11ce/view/194129962), which is tutorial 8 focused on canvas fundamentals. I am starting this tutorial without doing any of the others in hopes that I won't have to but will certainly revisit this site and the other resources that my new friends have shared with me :) 
+
 
