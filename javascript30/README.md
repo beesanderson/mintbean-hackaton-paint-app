@@ -93,11 +93,114 @@ We will take the `canvas.addEventListener('mousedown', () => isDrawing = true);`
 - You can also change it from round to other options. It defaults to what I can only call "slinky mode" in my cool personal naming convention style (wow my newly blossoming Developer humor is truly not funny...not even to me sigh)
 
 
+- I am LOVING this site, instructor is now explaining what [HSL Color Format](https://en.wikipedia.org/wiki/HSL_and_HSV) is and directed us to go to "Mother Effing HSL"'s website lol which is [here](https://mothereffinghsl.com/) I just honestly wanted to write out that link because its hilarious and awesome. But its PROGRAMMATICALLY SELECTING THE RAINBOW which is the coolest bestest sentence I've read at least today so far that is! I **LOVE** me some **RAINBOWS** yay!!! 
+    - *H*ue
+    - *S*aturation
+    - *L*ightness
+    Is what makes up *HSL* and its how you can Prooooograaaaammmm the rainbow (which man you had me at rainbow it doesn't take much!!)
+    
+- Sooo anyway why HSL is handy is because red starts at 0 and the opposite side of the spectrum is 360 so we can basically change color super easily by setting hue as a variable and incrementing the first number :) 
+
+![Rainbow Brush](/javascript30/images/rainbow-yay.png)
+- Thus you can now draw the rainbow :) that's it project over I win totally done this is all I or anyone else will ever need forever, the end, thanks for coming guys! ((I think I need sleep or food or coffee lol))
+    - Another cool thing with the hue option is that once it goes over 360 it just loops back in around on itself so even when its at like 6000 it'll still be doing the rainbow. You could include a "if then" statement to flip it back to 0 once it hits 360 though (which is probably just best practice to do anyway)
+
+- Can set the `.lineWidth` to hue also so it'll keep incrementing at the same rate though if you don't cap off at 360 that might be a little bit awkward. Could just create a new variable also but just for sake of teaching he used this as an example :) 
+    - This is just basically saying that if the line width is less then 100 continue to increment it until it reaches 100 in which case start to decrement it until it reaches one and so on and so forth. Will create a loop of getting thicker then thinner with progression based on 1 < 100 so yup 
+
+```JS
+let direction = true; //Default is true
+
+    if (hue >= 360) {
+        hue = 0;
+    }
+
+    if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+        direction = !direction;
+    }
+
+    if (direction) {
+        ctx.lineWidth++;
+    } else {
+        ctx.lineWidth--;
+    }
+```
+
+
+
 
 
 
 
 # Quick'n'Easy(*s*) Section
+
+## Quick Copy'n'Paste or CodeSnip Reference: 
+
+To change brush thickness: 
+```JS
+const ctx = canvas.getContent('2d');
+
+ctx.lineWidth = 100;
+```
+
+To update start/end point for brush: 
+```JS
+function draw(e) {
+    if(!isDrawing) return; //stop drawing when not pushed down
+    console.log(e);
+    ctx.beginPath();
+    //Start from
+    ctx.moveTo(lastX, lastY);
+    //Go to
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+    lastX = e.offsetX;
+    lastY = e.offsetY;
+}
+
+canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+})
+```
+
+To set brush color: 
+```JS
+let hue = 0; //SETS DEFAULT COLOR TO RED
+
+ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+// ^^^ Should be declared in draw(e) function
+
+hue++;
+// TO DRAW RAINBOW YAY
+```
+Can include an `if` statement to flip hue back to 0 once its greater than or equal to 360 to keep from looping around on itself though not totally needed because it will just continue to go through the rainbow color wheel infinitely :o 
+
+#### To increase brush thickness: 
+```JS
+let direction = true; //Default is true
+
+    if (hue >= 360) {
+        hue = 0;
+    }
+
+    if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+        direction = !direction;
+    }
+
+    if (direction) {
+        ctx.lineWidth++;
+    } else {
+        ctx.lineWidth--;
+    }
+```
+
+
+
+
+
+
+
 
 ## ES6 Syntax Tweaks (aka quick examples)
 
