@@ -223,3 +223,16 @@ Can be changed to:
     [lsatX, lastY] = [e.offsetX, e.offsetY]
 ```
 This is called "Destructuring an Array"
+
+
+
+
+## EOD 11/17/21 30mins or less Deployment Challenge: 
+
+I am unrealistically hoping to deploy my itty bitty project before 5pm Central time before I have to leave to pick up my daughter...so far I've been distracted by doing README.md updates and goofing around on the "sites" (if you can call it that...yet?) root homepage along with github pages docs to actually have done anything of use nor merit. Sigh. And so it begins...the mom brain kicks in and it's always the last hour of the day...
+
+- GitHub [pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites) recommends using [Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll) when you intend to host a static site with them. Not having time to read anything I'm going to wing it which of course is always super successful...right? 
+
+- I actually don't think I need Jekyll but perhaps these are the famous last words? Time shall tell..
+
+- I umm...I think I've done it??? It's 4:46pm...it would have been done sooner but in my classic ADHD oh a piece of candy style I jumped over to the actual documentation on Jekyll and GitHub Pages without even scrolling and going through GitHub pages main website...and this is why everyone automatically thinks I'm slow or they fall silent after I'm done speaking...sigh. Lol 
