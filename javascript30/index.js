@@ -10,6 +10,7 @@ ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 //To change line thickness: 
 ctx.lineWidth = 100;
+// ctx.globalCompositeOperation = 'multiply';
 
 //Couple "Dumby" Variables
 let isDrawing = false; // This will allow the client to only draw when the mouse is pressed down but allow for the cursor to move over the canvas without drawing on it :D So when you click it's set to true and when you stop clicking its set to off 

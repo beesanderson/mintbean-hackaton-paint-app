@@ -117,4 +117,7 @@ I am starting the tutorial Samantha sent me from [JavaScript30.com](https://cour
 
     - (Which I, of course, am to nervous to actually fully go live with because I keep making my portfolio website only to trash it and start over from the beginning.)
 
+3. Finished up with [JavaScript30.com](https://courses.wesbos.com/account/access/61946b0b41ee9b1bad8e11ce/view/194129962) canvas tutorial (checkout in the `/javascript30` file for my personal notes || musings as I've come to call my "live" tutorial notes README.md's) to see what I did today while balancing the busy "single mom of a 1 year old baby" life while answering seemingly nonstop calls and maintaining ongoing conversation with the family that took my daughter and I in (while I try to get on my feet to get us a place of our own that is!) and my many other hats!!! 
+
+4. Next task for the day (currently pending 34 mins ha) is to *attempt* to host my current project and deploy it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) site before I have to leave at 5pm Central to pick up my daughter...ya'll I'm so rookie I doubt I'll be able to check but you "future folk" check my GitLogs and see if I was able to do it haha! I'll name the commit "EOD 11/17/21" bleh
 

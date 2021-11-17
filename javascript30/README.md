@@ -126,8 +126,18 @@ let direction = true; //Default is true
     }
 ```
 
+- `.globalCompositeOperation` method is something that you may have seen if you've used any type of a photo editing program but basically when the line draws over itself it'll eventually turn it to black like so: 
 
+![Exp of Global Composite Operation Image](/javascript30/images/globalcompoperation.png)
 
+- you can achieve this by declaring...
+```JS
+ctx.globalCompositeOperation = 'multiply';
+```
+...With you other variables at the top of your `/index.js` file. You can also start to investigate different options using the aforementioned [MDN Rendering Context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin) documentation and begin your fun!! 
+
+### ...And thus ends the tutorial! 
+I've learned a lot and am naively under the impression that from this great foundation the tutorial gave me I'll be able to start on making my own Paint App and apply the new knowledge gleamed from here! Happy coding!! :D 
 
 
 
