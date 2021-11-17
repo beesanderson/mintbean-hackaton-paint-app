@@ -100,4 +100,6 @@ I think I will be capable to figure this out on my own considering what all I've
 
 I am starting the tutorial Samantha sent me from [JavaScript30.com](https://courses.wesbos.com/account/access/61946b0b41ee9b1bad8e11ce/view/194129962), which is tutorial 8 focused on canvas fundamentals. I am starting this tutorial without doing any of the others in hopes that I won't have to but will certainly revisit this site and the other resources that my new friends have shared with me :) 
 
+1. Created new folder titled `Javascript30` that links original tutorial plus GitHub sources. 
+
 
