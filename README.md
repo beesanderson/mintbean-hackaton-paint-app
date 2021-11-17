@@ -4,6 +4,15 @@ This is a proxy repository for the [Mintbean Hiring Hackathon Event](https://min
 
 My teams original plan was to do this project in React with the `<canvas>` approach and paint by way of DOM manipulation. Being that I have no experience in React I am left to choose if this would be the best option for me to do since my main priority is to get a project for my portfolio out of this event. I am left to reflect and consult and fear that allotted time is a major factor in whether or not I will even partake in this Hackathon. 
 
+I will be following the thorough (and quite honestly pretty versatile!!) Hackathon project [guidelines from Mintbean](https://info.mintbean.io/hiring-hackathon-guide) pretty heavily for direction and advice. If anyone bothers to read this and is in a similar boat (I hope not! ha!) as I am please give it a quick glance as I'm sure you'll find some pretty useful information for general project deployment FAQs and best practices. 
+
+
+### My Team 
+#### (before I went solo due to inexperience...)
+My original team member was [Rohit Jacob](https://github.com/rohitgj169) who is still offering to help me and have me join his team despite my complete inexperience. He's a wonderful guy!! His portfolio is listed [here](http://rohitjacob.tech/) and he is currently looking for work after graduating his bootcamp. Please, please give him a little "look see" because you won't regret it. I mean, as the fact that he's endured my super happy, bubbly, talkative, *plus* rainbow loving self speaks **volumes** about him!!! He's patiently endured my questions (but mostly conversations about silly things such as my top knot bun looking ridiculous to name one.) Despite that all, he has continued to make himself available to me to help with any questions or issues I run into (though luckily due to the AMAZING community from the previous [Girl Develop It Hackathon](https://girldevelopit.com/events/#/list) I just finished up on 11/12/21 and this new loving and supportive community at [Mintbean's Hackathon Discord Channel](https://discord.com/invite/j7CjBAz) I honestly haven't had to ask to many questions as everyone has already answered them before I had the chance!!!)
+
+To be honest, on the [Mintbean Community Discord](https://discord.com/invite/j7CjBAz) they've been so supportive and encouraging they've motivated someone like me to participate in the event that I realized is for *Junior* Developers either the day before or the day of after registering...*even* if its just for the experience and I won't submit my project to be sent on through their hiring channels!!!! 
+
 - Event Start Date - 11/16/2021
 
 - Event End Date - 11/23/2021
@@ -25,6 +34,7 @@ https://codepen.io/HarryGateaux/pen/BApxl
 
 ### Drawing From Dots
 https://codepen.io/cftflora/pen/xdAIw
+
 
 ### SVG Coloring Book
 https://codepen.io/tigt/pen/xZEdoP
@@ -77,19 +87,19 @@ I think I will be capable to figure this out on my own considering what all I've
 
 
 ## Resources: 
-[JavaScript30.com](https://javascript30.com/) From Samantha Tarrice 
+[JavaScript30.com](https://javascript30.com/) From [Samantha Tarrice](https://github.com/samanthatarrice)
 - In particular, challenge 8 is working on canvas
 
-[Simple Paint App](https://www.youtube.com/watch?v=EQFibzKT_WE) From Jasmine Reese 
+[Simple Paint App](https://www.youtube.com/watch?v=EQFibzKT_WE) From [Jasmine Reese](https://github.com/Jasmine582) 
 - Super basic YouTube video that walks you through the bare bones basics. 
 
-[Create a Drawing App in JS DEV Community](https://dev.to/0shuvo0/lets-create-a-drawing-app-with-js-4ej3) from Jasmine Reese
+[Create a Drawing App in JS DEV Community](https://dev.to/0shuvo0/lets-create-a-drawing-app-with-js-4ej3) from [Jasmine Reese](https://github.com/Jasmine582) 
 - Haven't investigated yet but looks super useful!
 
-[FontAwesome Icons](https://fontawesome.com/v5.15/icons?d=gallery&p=2&c=design&m=free) from  Jami Schwarzwalder
+[FontAwesome Icons](https://fontawesome.com/v5.15/icons?d=gallery&p=2&c=design&m=free) from  [Jami Schwarzwalder](https://github.com/jschwarzwalder)
 - An awesome list of all the icons that could or would be used for such a project.
 
-[MDN Canvas Rending Context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation) from Samantha Tarrice 
+[MDN Canvas Rending Context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation) from [Samantha Tarrice](https://github.com/samanthatarrice)
 - Another useful MDN link though it may possibly be the same one that my original teammate, Rohit Jacob, and I were originally researching from.
 
 
@@ -101,5 +111,10 @@ I think I will be capable to figure this out on my own considering what all I've
 I am starting the tutorial Samantha sent me from [JavaScript30.com](https://courses.wesbos.com/account/access/61946b0b41ee9b1bad8e11ce/view/194129962), which is tutorial 8 focused on canvas fundamentals. I am starting this tutorial without doing any of the others in hopes that I won't have to but will certainly revisit this site and the other resources that my new friends have shared with me :) 
 
 1. Created new folder titled `Javascript30` that links original tutorial plus GitHub sources. 
+2. Attend "Office Hours" meeting hosted by [Monarch](https://twitter.com/monarchwadia) and [Navi](https://twitter.com/Navi1Mann) ([Mintbean](https://twitter.com/mintbeanio) **awesome** founders!) to gleam more insight in how to progress. I must admit my nerves were better set to ease once Monarch spoke about a previous participant who was at a pretty similar experience level as I am who participated in 5 or so hackathons and then went on to win his 6th then got a job that following month. (Just a quick shout out on how thankful I am to have found this community!!!)
+
+    - I did speak up during this meeting to ask about which deployment sites would be the easiest for beginners as I've only hosted twice, once with [Heroku](https://www.heroku.com/) with my first full backend project which I did from the MDN tutorial, [Local Library Express MDN Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website) and then just recently (aka perhaps a week or two ago?) on [GitHub Pages](https://pages.github.com/) for my [Portfolio Website](https://bridgettesanderson.com/)
+
+    - (Which I, of course, am to nervous to actually fully go live with because I keep making my portfolio website only to trash it and start over from the beginning.)
 
 
