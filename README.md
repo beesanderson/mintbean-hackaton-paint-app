@@ -121,3 +121,5 @@ I am starting the tutorial Samantha sent me from [JavaScript30.com](https://cour
 
 4. Next task for the day (currently pending 34 mins ha) is to *attempt* to host my current project and deploy it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) site before I have to leave at 5pm Central to pick up my daughter...ya'll I'm so rookie I doubt I'll be able to check but you "future folk" check my GitLogs and see if I was able to do it haha! I'll name the commit "EOD 11/17/21" bleh
 
+- Oh wow I actually did it! I got it hosted at 4:56pm but forgot to update the root README.md with that fact lol but hopefully it still counts? Up up and away I go to get the baby :D 
+
