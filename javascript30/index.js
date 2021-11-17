@@ -1,11 +1,42 @@
 const canvas = document.querySelector("#draw");
-/* 
-HTML Canvas is straight up just MS Paint-as in the data is just 2d so we need to get the "context" or the data/user input from point a to point b which will be done through the content (a block of pixels) by way of the method .getContext (which can be 2D or 3D but we will be doing 2D for project)
-You actually don't draw specifically nor directly onto the canvas itself its all on the context
-*/
 const ctx = canvas.getContext("2d");
-/* 
-Make sure the canvas element is the correct sizing which will default to 800x800 per the HTML designations 
-*/ 
-canvas.width = widow.innerWidth;
+
+canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
+//Base settings/stroke styles
+ctx.strokeStyle = '#BADA55';
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+//To change line thickness: 
+ctx.lineWidth = 100;
+
+//Couple "Dumby" Variables
+let isDrawing = false; // This will allow the client to only draw when the mouse is pressed down but allow for the cursor to move over the canvas without drawing on it :D So when you click it's set to true and when you stop clicking its set to off 
+let lastX = 0;
+let lastY = 0; // You need a starting X/Y you can't just indicate starting coordinates. This is somewhat reminiscent of the snake game I made
+
+
+function draw(e) {
+    if(!isDrawing) return; //stop drawing when not pushed down
+    console.log(e);
+    ctx.beginPath();
+    //Start from
+    ctx.moveTo(lastX, lastY);
+    //Go to
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+    lastX = e.offsetX;
+    lastY = e.offsetY;
+}
+
+
+canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+})
+
+canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mouseup', () => isDrawing = false);
+canvas.addEventListener('mouseout', () => isDrawing = false); // This triggers if you move out of the canvas space and stop clicking and go back in, it will automatically trigger it off just in case 
+
