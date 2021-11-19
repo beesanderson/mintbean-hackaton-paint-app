@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    background: #252525;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    font-weight: 900!important;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.indent {
+    margin-left: 3em;
+    margin-right: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.blurb {
+    font-weight: 600;
+    text-align: center;
+}
+
+.accent-text {
+    font-weight: 800;
+    color: turquoise;
+    font-size: 2rem;
+}
+
+.accent-text-size {
+    font-weight: 600;
+    color: turquoise;
+}
+
+.btn {
+    padding: 10px 30px;
+    background: turquoise;
+    color: black;
+    font-weight: 600;
+    border: 2px solid #fff;
+    margin: 0 2em;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #252525;
+    color: turquoise;
+    font-weight: 600;
+    border: 2px solid turquoise;
+}
+
+.codepen-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.text-box {
+    /* background: #fff;
+    color: #252525; */
+    border: 5px dotted turquoise;
+    padding: 2em;
+    width: 60%;
+}
+
+.text-box:hover {
+    font-size: 1.5rem;
+    padding: .75rem;
+}
+
+.auto-margin {
+    margin: 0 auto;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.italic-text:hover {
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.border-accent {
+    border-top: 5px solid #555;
+    padding-top: 1.5em;
+}
+
+.readme {
+    font-size: 1.4rem;
+    display: block;
+    font-weight: 100;
+    text-align: center;
+}
+
+.github {
+    font-size: 1.4rem;
+    display: block;
+    font-weight: 100;
+    text-align: center;
+}
+
+.block {
+    display: block;
+}
+
+.blog {
+    font-size: 3rem;
+}
+
+.hero {
+    padding-bottom: 2em;
+}
