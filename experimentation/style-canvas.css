@@ -1,0 +1,110 @@
+/*
+==================================================================================
+                                Table Of Contents:
+================================================================================== 
+*/
+
+/*
+    1. Standard Selectors
+    2.  Typography
+            i. Utility Typography Classes
+           ii. Specific Typography Classes
+    3.  Layout
+            i.  Utility Layout Classes
+    4. Buttons
+            i. Standard Buttons
+           ii. JavaScript Buttons
+*/ 
+
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+canvas {
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* 
+=================
+Typography 
+================= 
+*/
+
+header h2 {
+    font-size: 2rem;
+}
+
+
+/* ------------ Utility Typography Classes -------------- */
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.outline {
+    border: 1px outset black;
+    outline: medium double gray;
+}
+
+
+/* ------------ Specific Typography Classes ------------- */
+
+
+
+
+
+/* 
+=================
+Layout
+================= 
+*/
+
+/* ----------- Utility Layout Classes--------------- */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------- Specific Layout Classes -----------  */
+
+
+
+
+/* 
+=================
+Buttons
+================= 
+*/
+
+
+/* ----------- Utility Button Classes --------------- */
+/* ----------- Specific Button Classes -----------  */
