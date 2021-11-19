@@ -39,6 +39,8 @@ h2 {
 
 canvas {
     background: #fff;
+    max-width: 100%;
+    height: auto;
 }
 
 img {
@@ -55,6 +57,7 @@ Typography
 
 header h2 {
     font-size: 2rem;
+    margin-bottom: .5em;
 }
 
 
@@ -94,8 +97,19 @@ Layout
     align-items: center;
 }
 
+.responsive-wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
 /* ----------- Specific Layout Classes -----------  */
 
+.btn-container {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 800px;
+}
 
 
 
@@ -105,6 +119,15 @@ Buttons
 ================= 
 */
 
+button {
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+}
 
 /* ----------- Utility Button Classes --------------- */
+
+
+
+
+
 /* ----------- Specific Button Classes -----------  */
