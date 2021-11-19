@@ -236,3 +236,4 @@ I am unrealistically hoping to deploy my itty bitty project before 5pm Central t
 - I actually don't think I need Jekyll but perhaps these are the famous last words? Time shall tell..
 
 - I umm...I think I've done it??? It's 4:46pm...it would have been done sooner but in my classic ADHD oh a piece of candy style I jumped over to the actual documentation on Jekyll and GitHub Pages without even scrolling and going through GitHub pages main website...and this is why everyone automatically thinks I'm slow or they fall silent after I'm done speaking...sigh. Lol 
+

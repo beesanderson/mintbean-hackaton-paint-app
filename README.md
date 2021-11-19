@@ -104,7 +104,7 @@ I think I will be capable to figure this out on my own considering what all I've
 
 
 
-# Day by day notes...
+# Day by day blog && notes...
 
 ### Day 2 - 11/17/2021
 
@@ -122,4 +122,26 @@ I am starting the tutorial Samantha sent me from [JavaScript30.com](https://cour
 4. Next task for the day (currently pending 34 mins ha) is to *attempt* to host my current project and deploy it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) site before I have to leave at 5pm Central to pick up my daughter...ya'll I'm so rookie I doubt I'll be able to check but you "future folk" check my GitLogs and see if I was able to do it haha! I'll name the commit "EOD 11/17/21" bleh
 
 - Oh wow I actually did it! I got it hosted at 4:56pm but forgot to update the root README.md with that fact lol but hopefully it still counts? Up up and away I go to get the baby :D 
+
+
+
+### Day 3 - 11/18/2021
+
+Didn't have the opportunity to work on this project nor any Hackathon related workflow due to prior existing appointments earlier in the day and getting a couple existing projects hosted through [GitHub Pages](pages.github.com) for my [LinkedIn](https://www.linkedin.com/in/bridgette-sanderson/) profile. One project included my previous Hackathon [GDI Project](https://saoigames.itch.io/green-me) where I was a Team Lead for my team's project which was an educational web app that we ended up making into a mobile android Target API game first for sake of time constraints. The second is my first solo JavaScript [Snake Game](https://bridgettesanderson.com/snake-by-bridgette/) that wasn't originally intended to be public but will be for the time being. 
+
+1. Worked on updating LinkedIn profile
+
+2. Hosted an existing project
+
+3. Will try to fit in some more work tonight after picking up baby from daycare, cooking dinner, and then getting baby off to bed. 
+
+    - Created new project folder to experiment 
+
+- Perhaps most realistic goal for the day would be to simply do a little bit of experimentation with creating an actual canvas board layout
+
+- If this is completed then investigate buttons and icon layouts plus logic. 
+
+Unfortunately today can mostly be seen as a loss in the way of the hackathon project development scope but can attempt to salvage with small intervals of time spent on minimal tasks. 
+
+- 8:07 pm started up macbook and ready to go :) 
 
