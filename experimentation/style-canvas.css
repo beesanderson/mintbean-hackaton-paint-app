@@ -109,6 +109,8 @@ Layout
     display: flex;
     justify-content: space-evenly;
     max-width: 800px;
+
+    display: none;
 }
 
 

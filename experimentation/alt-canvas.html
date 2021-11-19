@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6afe2f0c16.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Chonburi&family=Goblin+One&family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="/experimentation/alt-styles.css" rel="stylesheet">
+    <title>Alternative Paint App</title>
+</head>
+<body>
+
+    <div class="app">
+        
+        
+
+        <div class="controls">
+            
+            <div class="title">Sketch</div>
+
+            <div class="type">
+                <input type="radio" name="pen-type" id="pen-pencil" checked>
+                <label for="pen-pencil">
+                    <i class="fas fa-pen"></i>
+                </label>
+    
+                <input type="radio" name="pen-type" id="pen-brush">
+                <label for="pen-brush">
+                    <i class="fas fa-paint-brush"></i>
+                </label>
+    
+            </div>
+    
+            <div class="size">
+                <label for="pen-size">Size</label>
+                <input type="range" id="pen-size" min="1" max="50">
+            </div>
+    
+             <div class="color">
+                 <label for="pen-color">Color</label>
+                 <input type="color" id="pen-color" value="#252525">
+             </div>   
+    
+             <div class="actions">
+                 <button id="reset-canvas">Clear</button>
+                 <button id="save-canvas">Save</button>
+             </div>
+    
+    
+        </div> <!-- /end controls div -->
+
+        <!-- canvas. don't forget to put div for canvas itself silly lol -->
+
+        <div id="canvas-wrapper"></div>
+
+    </div>
+    
+
+    <script src="/experimentation/alt-script.js"></script>
+</body>
+</html>

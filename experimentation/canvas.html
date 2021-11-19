@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6afe2f0c16.js" crossorigin="anonymous"></script>
     <link href="/experimentation/style-canvas.css" rel="stylesheet">
     <title>Paint App 1.0</title>
 </head>
@@ -26,7 +27,37 @@
        <button id="clear" class="clear">Clear</button>
     </div>
 
+    <div class="controls responsive-wrapper">
+        <div class="type">
+            <input type="radio" name="pen-type" id="pen-pencil" checked>
+            <label for="pen-pencil">
+                <i class="fas fa-pen"></i>
+            </label>
 
+            <input type="radio" name="pen-type" id="pen-brush">
+            <label for="pen-brush">
+                <i class="fas fa-paint-brush"></i>
+            </label>
+
+        </div>
+
+        <div class="size">
+            <label for="pen-size">Size</label>
+            <input type="range" id="pen-size" min="1" max="50">
+        </div>
+
+         <div class="color">
+             <label for="pen-color">Color</label>
+             <input type="color" id="pen-color" value="#000">
+         </div>   
+
+         <div class="actions">
+             <button id="reset-canvas">Canvas</button>
+             <button id="save-canvas">Save</button>
+         </div>
+
+
+    </div> <!-- /end controls div -->
 
 
 
