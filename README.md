@@ -145,3 +145,20 @@ Unfortunately today can mostly be seen as a loss in the way of the hackathon pro
 
 - 8:07 pm started up macbook and ready to go :) 
 
+- Worked till 10:45 (which is around 3am for parents of toddlers FYI lol) last night and turned in.
+
+
+
+### Day 4 - 11/19/21
+
+So far I've been super distracted with getting my [LinkedIn](https://www.linkedin.com/in/bridgette-sanderson/) all set up. I just set it to display (and maybe notify? I don't know how it actually works tbh) that I am open to work and have been trying to do a bit of social media promotion on Twitter and Facebook. I need to make a "professional" facebook page and maybe even an Instagram too but that's not important for right now though it will help in the competition. It took me a long time yesterday getting my other projects all set up and deployed correctly due to routing and I still have a handful of things to fix (I think a bit of it has to do with the fact that I'm hosting through GitHub pages through my own personal domain name I bought.)
+
+#### Today's Goals: 
+- Work on getting fundamentals of `<canvas>` functionality set up and in my own code. 
+
+- Figure out best choice to save paint data to (Kyle, my mentor, suggested using MongoDB again for this but I don't know if I'll be able to do that while a basic front-end static site not to mention what problems that would cause with hosting it on Pages.)
+
+- Refer to [project objectives](https://mintbean.io/meets/cfa4fa54-c706-4c51-a04f-671f6686f9fd/resources) and make sure the MVP meets all minimal requirements for *Front-End* development project FIRST. Pursue Full-Stack once this, landing page, markdown, and storytelling, personal branding, and social media promotion is met. Only after, MVP is front-end requirements. 
+
+1. 11:30 am - Project Start
+
