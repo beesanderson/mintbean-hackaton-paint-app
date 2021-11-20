@@ -6,6 +6,8 @@ I'm going through a super quick tutorial that [Jasmine Reese](https://github.com
 
 Just a super quick video that uses [p5.JS](https://p5js.org/) and [FontAwesome](https://fontawesome.com/) to walk you through the basics of creating a canvas by way of DOM manipulation. To be honest I hadn't even a clue that *p5.js* even existed lol 
 
+### Finished my project around 4:30pm and then began working on ["Landing Page"](http://bridgettesanderson.com/mintbean-hackaton-paint-app/)
+
 
 #### To use P5JS & FontAwesome CDNs yourself...
 

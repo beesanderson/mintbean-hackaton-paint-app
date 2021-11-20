@@ -162,3 +162,17 @@ So far I've been super distracted with getting my [LinkedIn](https://www.linkedi
 
 1. 11:30 am - Project Start
 
+2. 12:30 pm - Quick Break
+
+3. 12: 45 pm - Project Back on, but distracted by [LinkedIn](https://www.linkedin.com/in/bridgette-sanderson/) and now [RemoteWork](https://www.remotehub.com/bridgette.sanderson) after a recruiter reached out to me (which is *OH MY GOODNESS!*)
+
+4. 5:30 pm - Leave to get baby
+
+5. 6:00-7:45 pm - Make dinner, feed baby, get baby ready for bed. 
+
+6. 8:00-8:45pm - Pack up baby bag and all supplies for all day community conference (in person) child care cancelled due to COVID19 so will have to have baby with me until 1pm tomorrow when sister gets home from work. 
+
+7. 9:00-10:00pm - Working on "Landing Page" proxy and getting links and new page, 
+
+
+

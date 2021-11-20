@@ -3,6 +3,7 @@
     font-family: "Raleway", sans-serif;
     background: #252525;
     color: #fff;
+
 }
 
 header {
@@ -27,6 +28,14 @@ a:focus {
 
 .mb0 {
     margin-bottom: 0;
+}
+
+.pb2 {
+    padding-bottom: 2em;
+}
+
+.pt2 {
+    padding-top: 2em;
 }
 
 .indent {
@@ -69,11 +78,29 @@ a:focus {
     margin: 0 2em;
 }
 
+
 .btn:hover,
 .btn:focus {
     background: #252525;
     color: turquoise;
+    font-weight: 900;
+    border: 2px solid turquoise;
+}
+
+.btn-project {
+    padding: 5px 10px;
+    background: turquoise;
+    color: black;
     font-weight: 600;
+    border: 2px solid #fff;
+    margin-right: 5em;
+}
+
+.btn-project:hover,
+.btn-project:focus {
+    background: #252525;
+    color: turquoise;
+    font-weight: 900;
     border: 2px solid turquoise;
 }
 
@@ -105,9 +132,11 @@ a:focus {
     font-style: italic;
 }
 
+
+
 .italic-text:hover {
     font-style: normal;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .border-accent {
@@ -142,20 +171,33 @@ a:focus {
     font-size: 3rem;
 }
 
-.hero {
-    padding-bottom: 2em;
+.date {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-left: 1rem;
 }
+
 
 .highlight {
     /* background: rgb(64, 64, 64, .5);
     background: rgb(242, 242, 242, .1);
     background: rgb(115, 115, 115, .1); */
-    border-radius: 50%;
-    font-size: 1.5vw;
+    border-radius: 10px;
     padding: .1rem;
     color: rgb(64, 224, 208);
+    font-size: 1.15rem;
+    background: rgb(51, 51, 51, .5);
+}
+
+.highlight:hover {
+    background:rgb(189, 244, 239, .1);
 }
 
 .grow-text {
-    font-size: 2vw;
+    font-size: 1.5rem;
+}
+
+.day-title {
+    display: flex;
+    justify-content: space-between;
 }
