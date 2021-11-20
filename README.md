@@ -174,5 +174,9 @@ So far I've been super distracted with getting my [LinkedIn](https://www.linkedi
 
 7. 9:00-10:00pm - Working on "Landing Page" proxy and getting links and new page, 
 
+### Done for the day at 11:10pm (which is 3am for parents of babies)
+- I literally cannot figure out flex box with the stupid buttons right now. I quit and am soooo tired plus I have a conference for church all day tomorrow (8:30am to 4pm) and they cancelled childcare so I have to have the baby with me...there is just no way I can make it lol 
+
+
 
 

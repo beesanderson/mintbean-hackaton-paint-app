@@ -17,6 +17,11 @@ a {
     color: #f2f2f2;
 }
 
+div {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 a:hover,
 a:focus {
     font-weight: 900!important;
@@ -67,6 +72,12 @@ a:focus {
     color: turquoise;
 }
 
+.day-heading {
+    font-weight: 800;
+    /* color: turquoise; */
+    border-top: 1px solid #40e0d0;
+    border-bottom: 1px solid #40e0d0;
+}
 
 
 .btn {
@@ -104,12 +115,44 @@ a:focus {
     border: 2px solid turquoise;
 }
 
+/* @media screen and (max-width: 600px) {
+    .codepen-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+} */
+
+
+
+/* .codepen-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+} */
+
 .codepen-links {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 2em;
 }
+
+@media screen and (max-width: 600px) {
+    .codepen-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 2em;
+    }
+}
+
+/* okay i legit can't figure this out and its 11pm and i still have to shower and 11pm is literally 1am for parents but 3am for single moms (timezone adjustments and all) */
 
 .text-box {
     /* background: #fff;
@@ -200,4 +243,8 @@ a:focus {
 .day-title {
     display: flex;
     justify-content: space-between;
+}
+
+footer {
+    width: 90%;
 }
