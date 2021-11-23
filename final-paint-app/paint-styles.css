@@ -6,15 +6,19 @@
 
 /*
     1. Standard Selectors
-    2. Typography
+    2. Colors
+    3. Typography
             i. Utility Typography Classes
            ii. Specific Typography Classes
-    3. Layout
+    4. Layout
             i.  Utility Layout Classes
-    4. Buttons
+    5. Buttons
             i. Standard Buttons
            ii. JavaScript Buttons
-    5. Images
+    6. Images
+    7.  Navbar
+            i. Hamburger
+           ii. Other Navbar Types
 */ 
 
 * {
@@ -24,14 +28,14 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Dosis', sans-serif;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-p {
+p
+ {
     margin-top: 0;
 }
 
@@ -43,11 +47,146 @@ img {
 
 /* 
 =================
+Colors
+================= 
+*/
+
+:root {
+
+/* ------------ LIGHT -------------- */
+
+--light-pink: hsla(296, 100%, 73%, 1);
+
+--light-mint: hsla(174, 96%, 85%, 1);
+
+--bright-mint: hsla(174, 100%, 56%, 1);
+
+--mute-mint: hsla(174, 19%, 60%, 1);
+
+--light-blue: hsla(200, 85%, 54%, 1);
+
+--light-muted-blue: hsla(200, 57%, 60%, 1);
+
+--light-purple: hsla(284, 100%, 67%, 1);
+
+--lightest-gray: hsla(0, 2%, 87%, 1);
+
+--lighter-gray: hsla(0, 0%, 74%, 1);
+
+--light-gray: hsla(0, 2%, 71%, 1); 
+
+--white: hsla(0, 0%, 100%, 1);
+
+
+/* ------------ MEDIUM -------------- */
+
+--accent: hsla(174, 72%, 56%, 1);
+
+--mint: hsla(174, 72%, 56%, 1);
+
+--deep-mint: hsla(174, 58%, 34%, 1);
+
+--blue: hsla(200, 85%, 29%, 1);
+
+--bright-blue: hsl(225, 72%, 56%);
+
+--muted-blue: hsla(200, 57%, 23%, 1);
+
+--muted-purple: hsla(278, 50%, 65%, 1);
+
+--fairy-purple: hsla(278, 100%, 65%, 1);
+
+--purple: hsla(284, 79%, 32%, 1);
+
+--bright-purple: hsla(284, 100%, 68%, 1);
+
+--gray: hsla(0, 0%, 50%, 1);
+
+--anchor-gray: hsla(235, 8%, 28%, 1);
+
+
+
+/* ----------- DARK -------------- */
+
+
+--dark-mint: hsla(174, 72%, 28%, 1);
+
+--darker-mint: hsla(174, 72%, 8%, 1);
+
+--darkest-mint: hsla(174, 32%, 12%, 1);
+
+--dark-blue: hsla(200, 85%, 25%, 1);
+
+--muted-steel-blue: hsla(200, 85%, 18%, 1);
+
+--darker-blue: hsla(200, 85%, 14%, 1);
+
+--darkest-blue: hsla(200, 85%, 9%, 1);
+
+--dark-plum: hsla(284, 69%, 15%, 1);
+
+--dark-purple: hsla(274, 38%, 17%, 1);
+
+--deep-accent: hsla(237, 27%, 17%, 1);
+
+--deepest-accent: hsla(237, 27%, 10%, 1);
+
+--shadow: hsla(0, 0%, 22%, 1);
+
+--dark-gray: hsla(0, 0%, 20%, 1);
+
+--semi-black: hsla(0, 0%, 15%, 1);
+
+--black: hsla(0, 0%, 0%, 1);
+
+/* ----------- TRANSLUCENT --------------- */
+
+--trans-white: hsla(0, 0%, 100%, 0.47);
+
+--trans-bright-mint: hsla(174, 100%, 65%, 0.54);
+
+--trans-mint: hsla(174, 72%, 56%, .5);
+
+--trans-blue: hsla(200, 100%, 54%, 0.55);
+
+--trans-purple: hsla(284, 79%, 32%, 0.49);
+
+--trans-shadow: hsla(0, 0%, 22%, 0.51);
+}
+
+
+/* 
+=================
 Typography 
 ================= 
 */
 
 /* ------------ Utility Typography Classes -------------- */
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.pb0 {
+    padding-bottom: 0;
+}
+
+.pt0 {
+    padding-top: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
 /* ------------ Specific Typography Classes ------------- */
 
 
@@ -73,3 +212,118 @@ Buttons
 
 /* ----------- Utility Button Classes --------------- */
 /* ----------- Specific Button Classes -----------  */
+
+
+
+/* 
+=================
+Images
+================= 
+*/
+
+
+
+/* 
+=================
+Navbar
+================= 
+*/
+
+/* ----------- Hamburger Menu --------------- */
+
+.navbar {
+    background: #333;
+    overflow: hidden;
+    position: relative;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    display: block;
+  }
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    padding: .5em;
+    font-size: 2rem;
+
+}
+
+.navbar-links {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 900;
+    /* display: block; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: none;
+}
+
+.toggle-button {
+    background: #252525;
+    right: 0;
+    top: 0;
+    display: block;
+    position: absolute;
+    padding: .5em;
+    font-size: 2rem;
+}
+
+.navbar-links.active {
+    display: block;
+}
+
+.navbar-links li a {
+    display: block;
+    padding: 1em 0;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+/* ----------- Desktop Menu --------------- */
+
+
+
+/* @media (max-width: 715px) {
+    .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    }
+    .navbar-links li {
+    margin: 5px 0;
+    }  */
+
+
+
+
+
+
+
+
+
+
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+
+/* 
+=================
+================= 
+*/
+
