@@ -35,6 +35,7 @@ body {
     font-family: 'Dosis', sans-serif;
     background: var(--trans-white);
     font-weight: 200;
+    /* background: var(--trans-black); */
 }
 
 h1,
@@ -55,6 +56,10 @@ h1 {
     font-size: 2.5rem;
     text-align: center;
 
+}
+
+main {
+    /* transform: translate(-50%, -50%); */
 }
 
 
@@ -88,6 +93,8 @@ Typography
 h1 .font-accent {
     margin-top: -.3em; 
 }
+
+
 
 
 
@@ -128,7 +135,7 @@ Layout
 
 .canvas-wrapper {
     background: var(--trans-mint);
-    padding: 2em;
+    padding: 1.5em;
     display: flex;
     justify-content: center;
     max-width: 900px;
@@ -143,6 +150,92 @@ canvas {
     width: 800px; */
 }
 
+/* ---- App Paint Controls ----  */
+.controls {
+    background: var(--trans-mint);
+    /* height: vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+}
+
+.toolbar-menu {
+    font-size: 1.3rem;;
+    text-decoration: none;
+    font-weight: 900;
+    /* color: var(--darkest-mint); */
+    background: var(--trans-mint);
+    text-align: center;
+}
+
+/* .controls .toolbar-menu, */
+.controls .type,
+.controls .size,
+.controls .color {
+    margin: 10px 0px;
+}
+
+/* hides radio buttons not icons */
+.controls .type input {
+    display: none;
+}
+
+/* styles icons when checked */
+.controls .type input:checked + label {
+    background: #111;
+    color: #eee;
+    border-radius: 50%;
+}
+
+
+
+
+/* ---- DESKTOP App Paint Controls ----  */
+
+@media (min-width: 600px) {
+    .controls {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+
+/* ----------- COPY N PASTE TO SEE WHAT DO --------------- */
+
+.toolbar-btn input label,
+.controls .type label {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+/* styles icons when checked */
+.controls .type input:checked + label {
+    background: #111;
+    color: #eee;
+    border-radius: 50%;
+}
+
+/* .controls .size input {
+    height: 10px;
+}
+
+.controls .actions {
+    flex: 1;
+    text-align: right;
+}
+
+.controls .actions button {
+    padding: 5px 10px;
+    cursor: pointer;
+} */
+
+
 
 
 /* 
@@ -153,6 +246,12 @@ Buttons
 
 /* ----------- Utility Button Classes --------------- */
 /* ----------- Specific Button Classes -----------  */
+
+.toolbar-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
 
 
 

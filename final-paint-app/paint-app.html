@@ -40,21 +40,84 @@
 
     <main>
 
-        <!-- <div class="hero-title"> -->
+        <div class="title">
             <h1>Paint like a <span class="font-accent">Ross</span></h1>
-        <!-- </div> -->
+        </div>
+
+<!-- 
+        <div class="toolbar-menu">
+                    <i class="fas fa-edit"></i>
+                    <span class="tools">Tools</span>
+        </div> -->
+
+
+        <div id="controls" class="controls">
+
+            <!-- <div class="toolbar-menu mt0 mb0">
+                <h2>Tools</h2>
+                <i class="fas fa-edit"></i>
+            </div> -->
+
+            
+            <!-- <div class="toolbar-menu">
+                        <i class="fas fa-edit"></i>
+                        <span class="tools">Tools</span
+            </div> -->
+
+                
+                <!-- <input id="edit-tool" name="pen-type" type="radio">
+                <label for="edit-tool">
+                    <i class="fas fa-edit"></i>
+                </label> -->
+
+
+            <div class="type">
+                <input id="pen-pencil" name="pen-type" type="radio" checked>
+                <label for="pen-pencil">
+                    <i class="fas fa-pen"></i>
+                </label>
+
+                <input id="pen-brush" name="pen-type" type="radio">
+                <label for="pen-brush">
+                    <i class="fas fa-paint-brush"></i>
+                </label>
+
+            </div> <!-- /end .controls -->
+
+
+
+            <div class="size">
+                <label for="pen-size">Size</label>
+                <input id="pen-size" type="range" min="1" max="50">
+            </div>
+
+
+            <div class="color">
+                <label for="pen-color">Color</label>
+                <input id="pen-color" type="color" value="#000000">
+            </div>
+
+
+            <div class="actions">
+                <button id="reset-canvas" class="toolbar-btn">Clear</button>
+                <button id="save-canvas" class="toolbar-btn">Save</button>
+            </div>
+
+
+
+        </div>
 
         
 
 
-        <!-- <section> -->
+        <section class="canvas-board">
 
                 <div id="canvas-wrapper" class="canvas-wrapper margin-center">
 
                     <canvas id="canvas" class="canvas"></canvas>
         
                 </div>
-        <!-- </section> -->
+        </section>
     </main>
 
 

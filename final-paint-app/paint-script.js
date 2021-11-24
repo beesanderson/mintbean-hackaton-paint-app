@@ -26,11 +26,11 @@ let direction = true
 
 
 /* Base Stroke&Pen Settings */
-ctx.strokeStyle = '#00000'
+ctx.strokeStyle = '#000000'
 ctx.lineJoin = 'round'
 ctx.lineCap = 'round'
 //To change line thickness: 
-ctx.lineWidth = 100;
+// ctx.lineWidth = 100;
 
 
 
