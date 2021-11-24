@@ -15,7 +15,7 @@ toggleButton.addEventListener("click", () => {
 const canvas = document.querySelector("#canvas")
 const ctx = canvas.getContext("2d")
 
-console.log(canvas)
+
 
 /* Functionality Variables */
 let isDrawing = false
@@ -37,7 +37,24 @@ ctx.lineCap = 'round'
 /* Functions */
 
 function draw(e) {
+    if(!isDrawing) return;
+    console.log(e)
 
+    //start the path being down by accessing the context from canvas 
+    ctx.beginPath()
+
+    //moving the line from lastX to lastY
+    ctx.moveTo(lastX, lastY)
+
+    //setting/linking the lastX && lastY to the key(e) evens w e.offsetX && e.offsetY
+    ctx.lineTo(e.offsetX, e.offsetY)
+
+    //to actually draw
+    ctx.stroke()
+
+    //set lastX and lastY from correct coordinates 
+    lastX = e.offsetX
+    lastY = e.offsetY
 }
 
 
@@ -48,11 +65,20 @@ function draw(e) {
 
 /* Event Listeners */
 
-canvas.addEventListener("mousedown", (e) => {
-    isDrawing = true
-    [lastX, lastY] = [e.offsetX, e.offsetY]
-})
-
 canvas.addEventListener('mousemove', draw)
+
+canvas.addEventListener("mousedown", () => isDrawing = true)
+
+
 canvas.addEventListener('mouseup', () => isDrawing = false)
 canvas.addEventListener('mouseout', () => isDrawing = false)
+
+
+// canvas.addEventListener("mousedown", (e) => {
+//     isDrawing = true
+//     [lastX, lastY] = [e.offsetX, e.offsetY]
+// })
+
+// canvas.addEventListener('mousemove', draw)
+// canvas.addEventListener('mouseup', () => isDrawing = false)
+// canvas.addEventListener('mouseout', () => isDrawing = false)

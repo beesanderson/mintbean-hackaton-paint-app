@@ -6,6 +6,75 @@
 
 - for basic menu icon animated and not [menu icon non/animated](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 
+### To check your movements: 
+```js
+/* Functions */
+
+function draw(e) {
+    console.log(e)
+}
+
+
+/* Event Listeners */
+
+canvas.addEventListener('mousemove', draw)
+```
+
+This is the most basic form of functionality: 
+
+```html
+                <div id="canvas-wrapper" class="canvas-wrapper margin-center">
+
+                    <canvas id="canvas" class="canvas"></canvas>
+        
+                </div>
+```
+
+```JS
+/* Canvas DOM Variables */
+const canvas = document.querySelector("#canvas")
+const ctx = canvas.getContext("2d")
+
+
+
+/* Functionality Variables */
+let isDrawing = false
+let lastX = 0
+let lastY = 0
+let hue = 0
+let direction = true
+
+
+
+/* Base Stroke&Pen Settings */
+ctx.strokeStyle = '#000000'
+ctx.lineJoin = 'round'
+ctx.lineCap = 'round'
+
+
+
+/* Functions */
+function draw(e) {
+    if(!isDrawing) return;
+    console.log(e)
+    //start the path being down by accessing the context from canvas 
+    ctx.beginPath()
+    //moving the line from lastX to lastY
+    ctx.moveTo(lastX, lastY)
+    //setting/linking the lastX && lastY to the key(e) evens w e.offsetX && e.offsetY
+    ctx.lineTo(e.offsetX, e.offsetY)
+    //to actually draw
+    ctx.stroke()
+}
+
+canvas.addEventListener('mousemove', draw)
+canvas.addEventListener("mousedown", () => isDrawing = true)
+canvas.addEventListener('mouseup', () => isDrawing = false)
+canvas.addEventListener('mouseout', () => isDrawing = false)
+```
+
+
+
 ## Code Snips and work around(s) plus different directions
 
 If you want to do the toolbar-menu on the same line as the others:
