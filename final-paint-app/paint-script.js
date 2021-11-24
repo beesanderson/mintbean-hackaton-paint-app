@@ -15,6 +15,7 @@ toggleButton.addEventListener("click", () => {
 const canvas = document.querySelector("#canvas")
 const ctx = canvas.getContext("2d")
 
+console.log(canvas)
 
 /* Functionality Variables */
 let isDrawing = false

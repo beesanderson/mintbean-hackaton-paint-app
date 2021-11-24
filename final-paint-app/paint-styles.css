@@ -54,7 +54,7 @@ h1 {
     font-weight: 100;
     font-size: 2.5rem;
     text-align: center;
-    padding: .5em;
+
 }
 
 
@@ -115,6 +115,7 @@ Layout
     margin: 0 auto;
 }
 
+
 .mb0 {
     margin-bottom: 0;
 }
@@ -127,13 +128,19 @@ Layout
 
 .canvas-wrapper {
     background: var(--trans-mint);
-    /* width: 800px;
-    height: 600px; */
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    max-height: 900px;
 }
 
 canvas {
-    height: 700px;
-    width: 1000px;
+    background: var(--white);
+    border: 2px solid var(--deepest-accent);
+    width: 100%;
+    /* height: 600px;
+    width: 800px; */
 }
 
 
