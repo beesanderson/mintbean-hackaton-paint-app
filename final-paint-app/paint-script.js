@@ -89,7 +89,6 @@ function draw(e) {
     console.log(e)
 
     //try to call the newly created mouseEvent() function. I don't know the difference between (e) and (events) though I don't know if that will create issues?
-    mouseEvent(e)
 
     //start the path being down by accessing the context from canvas 
     ctx.beginPath()

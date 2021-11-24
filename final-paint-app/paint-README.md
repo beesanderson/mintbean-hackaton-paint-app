@@ -46,6 +46,26 @@
 
 - So because there is just randomly another clone of the `paint-script.js` file that is legit the same exact thing I'm just going to remove the whole button thing and see how that goes. I don't even know how that would help the original poster with their issue...
 
+- Struggle bus is real. Found this [cool codepen](https://codepen.io/chrisjaime/pen/lcEpn) that does an alert with the coordinates. But honestly I think that last stack overflow messed me up or confused me more then I had to be because this seems pretty simple and straightforward. Just from looking at that codepen its legit just a matter of mapping out coordinates in reference to the canvas then resolution and converting them properly for the mouse strokes. I guess I could also do a reformat JS variable thing but that seems like it's a lot to do when I should be able to just do this lol 
+
+I guess people also searched for...
+1. canvas move image with mouse
+2. javascript get mouse position on canvas
+3. change mouse position javascript
+4. how to get xy coordinates of mouse
+5. canvas coordinates to pixels
+6. Canvas mouse position wrong
+7. How do I find my mouse coordinates on canvas?
+8. How do we get the position of the mouse cursor on the screen?
+9. How do you find XY coordinates on a mouse?
+10. Which method is used to get the Y coordinate of the point where users have click using mouse button?
+
+
+
+
+
+
+
 
 
 
@@ -209,4 +229,39 @@ Alright. Gotten to the point once again where I have no idea what I'm doing lol
         - PS--- To bad BabelJS isn't reverse compatible. When I first found out about it I got so happy because I, of course gah, did a lot of tutorials and projects in pre-ES6 syntax and I'm like yay I'll be able to quickly and efficiently convert it over to ES6 without wasting days doing it! But nope. But to be fair this might actually be a good thing because like...one less way for us all to eventually lose our jobs to the AI [future robot overlords](https://www.nytimes.com/2021/09/09/technology/codex-artificial-intelligence-coding.html) that will essentially they terk err jerbs!!!!!! (South Park reference, yes yes.) 
 
 
-![south park they took our jobs meme](/final-paint-app/images/southpark.jpeg)
+            ![south park they took our jobs meme](/final-paint-app/images/southpark.jpeg)
+
+    4. [Mouse Coordinates after resizing (or Scrolling) On Canvas](https://riptutorial.com/html5-canvas/example/19534/mouse-coordinates-after-resizing--or-scrolling-) finally might have found an actual answer woot woot!
+
+        *from the above site...*
+        > Canvas apps often rely heavily on user interaction with the mouse, but when the window is resized, the mouse event coordinates that canvas relies on are likely changed because resizing causes the canvas to be offset in a different position relative to the window. Thus, responsive design requires that the canvas offset position be recalculated when the window is resized -- and also recalculated when the window is scrolled. This code listens for window resizing events and recalculates the offsets used in mouse event handlers:
+
+                            ```JS
+                            // variables holding the current canvas offset position
+                            //    relative to the window
+                            var offsetX,offsetY;
+
+                            // a function to recalculate the canvas offsets
+                            function reOffset(){
+                                var BB=canvas.getBoundingClientRect();
+                                offsetX=BB.left;
+                                offsetY=BB.top;        
+                            }
+
+                            // listen for window resizing (and scrolling) events
+                            //     and then recalculate the canvas offsets
+                            window.onscroll=function(e){ reOffset(); }
+                            window.onresize=function(e){ reOffset(); }
+
+                            // example usage of the offsets in a mouse handler
+                            function handleMouseUp(e){
+                                // use offsetX & offsetY to get the correct mouse position
+                                mouseX=parseInt(e.clientX-offsetX);
+                                mouseY=parseInt(e.clientY-offsetY);
+                                // ...
+                            }
+                            ```
+
+    5. [How to get mouse position on transformed canvas](https://pretagteam.com/question/how-to-get-mouse-position-on-transformed-html5-canvas)
+
+    6. [StackOF Cursor not aligned using html canvas](https://stackoverflow.com/questions/50966385/cursor-not-align-using-html-canvas) this one helped me figure out sizing I believe. 
