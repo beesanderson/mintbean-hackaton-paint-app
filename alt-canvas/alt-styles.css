@@ -7,6 +7,7 @@
 body {
     background: #555;
     font-family: "Raleway", sans-serif;
+
 }
 
 
@@ -19,6 +20,20 @@ body {
     height: 650px;
     font-family: "Raleway", sans-serif;
 }
+
+
+/* i added to fix for mobile? */
+.app {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    width: 650px;
+    height: 650px;
+    font-family: "Raleway", sans-serif;
+    margin: 5em auto; 
+}
+
 
 .app .controls {
     height: 50px;
@@ -76,3 +91,11 @@ body {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+/* @media (min-width: 600px) {
+    .controls {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+} */
