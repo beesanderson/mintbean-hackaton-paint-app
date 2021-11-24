@@ -39,8 +39,6 @@ let lastY = 0
 const mouse = {
     x: 0, y: 0,                             // Coordinates
     lastX: 0, lastY: 0,                     // Last frames mouse position
-    b1: false, b2: false, b3: false,        // Buttons (umm?? what btns?)
-    buttonNames: ["b1", "b2",  "b3"],       // Named Buttons
 }
 
 console.log(mouse)
@@ -82,12 +80,6 @@ function mouseEvent(event) {
     mouse.x *= canvas.width
     mouse.y *= canvas.height
 
-            // Don't know what he's referring to here but this if statement is "just get the other info you are interested in"
-            if (event.type === "mousedown") {
-                mouse[mouse.buttonNames[event.which - 1]] = true       //Sets the button as down
-            } else if (e.type === "mouseup") {
-                mouse[mouse.buttonNames[event.which - 1]] = false      //Sets the button up
-            }
 } 
 
 
@@ -95,6 +87,9 @@ function mouseEvent(event) {
 function draw(e) {
     if(!isDrawing) return;
     console.log(e)
+
+    //try to call the newly created mouseEvent() function. I don't know the difference between (e) and (events) though I don't know if that will create issues?
+    mouseEvent(e)
 
     //start the path being down by accessing the context from canvas 
     ctx.beginPath()
@@ -113,8 +108,6 @@ function draw(e) {
     lastY = e.offsetY
 }
 
-
- 
 
 
 

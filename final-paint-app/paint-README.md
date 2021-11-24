@@ -6,6 +6,8 @@
 
 - for basic menu icon animated and not [menu icon non/animated](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 
+- Also yeah no idea where there are now *two* paint-script files lol they are apparently legit the same except for where I added things to compare the two. Also...super confused at how to compare two files on github it should be super easy right? these two were on different branches. 
+
 
 
 
@@ -22,9 +24,27 @@
     - The only issue I'm having so far with conversion to ES6 syntax is the whole event key thing. That was difficult for me with my [Snake Game](https://bridgettesanderson.com/snake-by-bridgette/) too and if this was the correct repository (something fishy happened with the original one though I'll make my other snake repos public if any would like to see my README.md incessant crazy person notes like how I do lol) I was struggling with even back then. I'm not great with the whole event actions just yet but it is really cool that this project uses them so much because I've already learned a lot and can improve my snake game with the bit I've gleamed already :)  
 
 
-- Okay I have no idea what this guy is talking about with the button stuff. I don't know why he created buttons in the `mouse const` but other than that I am really starting to grasp this all...or so I think. Famous last words much lol. I'm just going to take them out after committing them real quick.
+- Okay I have no idea what this guy is talking about with the button stuff. I don't know why he created buttons in the `mouse const` but other than that I am really starting to grasp this all...or so I think. Famous last words much lol. I'm just going to take them out after committing them real quick. These are the code blocks I'm taking out: 
 
+    ```js
+    const mouse = {
+    x: 0, y: 0,                             // Coordinates
+    lastX: 0, lastY: 0,                     // Last frames mouse position
+    b1: false, b2: false, b3: false,        // Buttons (umm?? what btns?)
+    buttonNames: ["b1", "b2",  "b3"],       // Named Buttons
 
+    ```
+
+    ```js
+                // Don't know what he's referring to here but this if statement is "just get the other info you are interested in"
+            if (event.type === "mousedown") {
+                mouse[mouse.buttonNames[event.which - 1]] = true       //Sets the button as down
+            } else if (e.type === "mouseup") {
+                mouse[mouse.buttonNames[event.which - 1]] = false      //Sets the button up
+            }
+    ```
+
+- So because there is just randomly another clone of the `paint-script.js` file that is legit the same exact thing I'm just going to remove the whole button thing and see how that goes. I don't even know how that would help the original poster with their issue...
 
 
 
