@@ -133,19 +133,27 @@ Layout
 
 /* ----------- Specific Layout Classes -----------  */
 
+/* .canvas-board {
+    background: var(--darker-blue);
+    padding: 5em;
+} */
+
 .canvas-wrapper {
     background: var(--trans-mint);
     padding: 1.5em;
     display: flex;
     justify-content: center;
-    max-width: 900px;
-    max-height: 900px;
+    max-width: 960px;
+    /* max-height: 960px; */
 }
 
 canvas {
     background: var(--white);
     border: 2px solid var(--deepest-accent);
     width: 100%;
+    display: block;
+    max-width: 800px;
+    max-height: 600px;
     /* height: 600px;
     width: 800px; */
 }
@@ -158,7 +166,7 @@ canvas {
     flex-direction: column;
     align-items: center;
     padding: 10px 10px 0px 10px;
-    max-width: 900px;
+    max-width: 960px;
 }
 
 .toolbar-menu {
