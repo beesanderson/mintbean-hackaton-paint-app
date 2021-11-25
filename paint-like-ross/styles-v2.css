@@ -18,7 +18,7 @@
     6.  Navbar
             i. Hamburger
            ii. Other Navbar Types
-    7. Colors
+    7. Colors ---full disclosure I got super carried away with the colors...
             i. Light
            ii. Medium
           iii. Dark
@@ -325,12 +325,6 @@ Layout
 
 /* ---- DESKTOP App Paint Controls ----  */
 
-/* @media (min-width: 700px) {
-    .toolbar .type {
-        display: flex;
-        flex-wrap: nowrap;
-    }   
-} */
 
 @media (min-width: 600px) {
     .toolbar {
@@ -340,36 +334,7 @@ Layout
 }
 
 
-/* ----------- debug ya container crap -----------  */
 
-.test-container {
-    color: var(--dark-plum);
-    border-bottom: 5px dotted var(--trans-purple);
-
-}
-
-.debug-box {
-    padding-right: 1em;
-    padding-bottom: .5em;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.debug-box h2 {
-    margin-top: .5em;
-    font-size: 1.2rem;
-}
-
-.debug-box h2 span {
-    background: var(--trans-mint);
-    border-right: 2px solid var(--deep-accent);
-    border-top: .1px solid var(--muted-purple);
-    border-left: .2px solid var(--muted-purple);
-    border-bottom: 4px solid var(--deep-accent);
-    margin: .5rem;
-    padding: .1rem .5rem;
-}
 
 
 
@@ -503,14 +468,6 @@ nav a:focus {
 
 
 
-/* @media (max-width: 715px) {
-    .navbar-links {
-    flex-direction: column;
-    align-items: center;
-    }
-    .navbar-links li {
-    margin: 5px 0;
-    }  */
 
 
 
@@ -648,17 +605,3 @@ Colors
 
 
 
-
-/* -------------------------- */
-/* -------------------------- */
-/* -------------------------- */
-/* -------------------------- */
-/* -------------------------- */
-/* -------------------------- */
-/* -------------------------- */
-/* -------------------------- */
-
-/* 
-=================
-================= 
-*/

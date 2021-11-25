@@ -100,7 +100,6 @@ function drawPencil() {
 
 
 
-
 function drawCircle() {
     let radius = ctx.lineWidth * 1.5
     ctx.beginPath()
