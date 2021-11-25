@@ -5,7 +5,7 @@
 */
 
 /*
-    1. Standard Selectors
+    1. Element Selectors
     2. Typography
             i. Utility Typography Classes
            ii. Specific Typography Classes
@@ -35,7 +35,9 @@ body {
     font-family: 'Dosis', sans-serif;
     background: var(--trans-white);
     font-weight: 200;
-    /* background: var(--trans-black); */
+    /* background: var(--trans-shadow); */
+    background: var(--trans);
+    background: var(--trans-shaded);
 }
 
 h1,
@@ -51,16 +53,14 @@ img {
     display: block;
 }
 
-h1 {
+/* h1 {
     font-weight: 100;
     font-size: 2.5rem;
     text-align: center;
+} */
 
-}
 
-main {
-    /* transform: translate(-50%, -50%); */
-}
+
 
 
 
@@ -90,9 +90,7 @@ Typography
 
 /* ------------ Specific Typography Classes ------------- */
 
-h1 .font-accent {
-    margin-top: -.3em; 
-}
+
 
 
 
@@ -110,12 +108,11 @@ Layout
 /* ----------- Utility Layout Classes--------------- */
 
 .wrapper {
-    /* padding-right: 10px;
-    padding-left: 10px; */
     width: 90%;
-    max-width: 960px;
     margin: 0 auto;    
-    /* padding: 0 10px; */
+    background: var(--trans-darkblue);
+    background: var(--trans-shadow);
+    background: var(--trans-steel);
 }
 
 .margin-center {
@@ -135,114 +132,88 @@ Layout
     padding: 2em;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-}
 
-.flex-column-container {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* ----------- test container crap -----------  */
-
-.test-container {
-    /* background: var(--trans-shadow); */
-    color: var(--dark-plum);
-    border-bottom: 5px dotted var(--trans-purple);
-    justify-content: space-between;
-}
-
-.coordinate-container {
-    /* background:var(--trans-purple); */
-    padding-right: 1em;
-    padding-bottom: .5em;
-    /* border-bottom: 5px dotted var(--trans-purple); */
-}
-
-.test-container h2 {
-    margin-top: .5em;
-    font-size: 1.2rem;
-}
-
-.test-container h2 span {
-    background: var(--trans-mint);
-    border-right: 2px solid var(--deep-accent);
-    border-top: .1px solid var(--muted-purple);
-    border-left: .2px solid var(--muted-purple);
-    border-bottom: 4px solid var(--deep-accent);
-    margin: .5rem;
-    padding: .1rem .5rem;
-}
 
 
 
 /* ----------- Specific Layout Classes -----------  */
 
-/* .canvas-board {
-    background: var(--darker-blue);
-    padding: 5em;
-} */
 
 .canvas-wrapper {
     background: var(--trans-mint);
-    padding: 1.5em;
-    display: flex;
-    justify-content: center;
-    max-width: 960px;
-    /* max-height: 960px; */
+    margin-top: 2em;
+    border-top: var(--deep-mint) solid 1px;
+    border-left: var(--deep-mint) solid .5px;
+    border-bottom: var(--deep-mint) solid 2px;
+    border-right: var(--deep-mint) solid 4px;
 }
 
-canvas {
-    background: var(--white);
-    border: 2px solid var(--deepest-accent);
-    width: 100%;
-    display: block;
-    max-width: 800px;
-    max-height: 600px;
-    /* height: 600px;
-    width: 800px; */
-}
+
 
 /* ---- App Paint Controls ----  */
-.controls {
-    background: var(--trans-mint);
-    /* height: vh; */
+
+
+/* ---- MOBILE App Paint Controls ----  */
+
+.toolbar {
+    background: var(--trans-shadow);
+    background: var(--trans-shaded);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 10px 0px 10px;
-    max-width: 960px;
-}
-
-.toolbar-menu {
-    font-size: 1.3rem;
-    text-decoration: none;
     font-weight: 900;
-    /* color: var(--darkest-mint); */
-    background: var(--trans-mint);
+    font-size: 1.3rem;
 }
 
-/* .controls .toolbar-menu, */
-.controls .type,
-.controls .size,
-.controls .color {
+.toolbar .type,
+.toolbar .size,
+.toolbar .color {
     margin: 10px 0px;
 }
 
-/* hides radio buttons not icons */
-.controls .type input {
+/* Hides Radio Buttons but not Icons */
+.toolbar .type input {
     display: none;
 }
 
+
+.toolbar-btn input label,
+.toolbar .type label {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 .2rem;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.toolbar .size input {
+    height: 10px;
+}
+
+/* .toolbar .actions {
+    flex: 1;
+    text-align: right;
+} */
+
+.toolbar .actions button {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 600;
+    /* background: var(--semi-black);
+    color: var(--white); */
+    /* border: 1px solid var(--black); */
+}
+
 /* styles icons when checked */
-.controls .type input:checked + label {
-    background: #111;
-    color: #eee;
+.toolbar .type input:checked + label {
+    background: var(--semi-black);
+    color: var(--white);
     border-radius: 50%;
 }
+
+
 
 
 
@@ -250,46 +221,17 @@ canvas {
 /* ---- DESKTOP App Paint Controls ----  */
 
 @media (min-width: 600px) {
-    .controls {
+    .toolbar {
         flex-direction: row;
         justify-content: space-evenly;
-    }
+    }   
 }
 
 
-/* ----------- COPY N PASTE TO SEE WHAT DO --------------- */
 
-.toolbar-btn input label,
-.controls .type label {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    text-align: center;
-    line-height: 30px;
-    margin: 0px 2px;
-    cursor: pointer;
-}
 
-/* styles icons when checked */
-.controls .type input:checked + label {
-    background: #111;
-    color: #eee;
-    border-radius: 50%;
-}
 
-/* .controls .size input {
-    height: 10px;
-}
 
-.controls .actions {
-    flex: 1;
-    text-align: right;
-}
-
-.controls .actions button {
-    padding: 5px 10px;
-    cursor: pointer;
-} */
 
 
 
@@ -311,6 +253,11 @@ Buttons
 
 
 
+
+
+
+
+
 /* 
 =================
 Images
@@ -324,6 +271,24 @@ Images
 Navbar
 ================= 
 */
+
+.nav-accent {
+    font-weight: 900;
+}
+
+.boss {
+    display:none;
+}
+
+.boss.active {
+    display: inline;
+}
+
+.ross.active {
+    display: none;
+}
+
+
 
 /* ----------- Hamburger Menu --------------- */
 
@@ -410,6 +375,14 @@ nav a:focus {
 
 
 
+
+
+
+
+
+
+
+
 /* 
 =================
 Colors
@@ -420,19 +393,13 @@ Colors
 
     /* ------------ LIGHT -------------- */
     
-    --light-pink: hsla(296, 100%, 73%, 1);
-    
     --light-mint: hsla(174, 96%, 85%, 1);
-    
-    --bright-mint: hsla(174, 100%, 56%, 1);
     
     --mute-mint: hsla(174, 19%, 60%, 1);
     
     --light-blue: hsla(200, 85%, 54%, 1);
     
     --light-muted-blue: hsla(200, 57%, 60%, 1);
-    
-    --light-purple: hsla(284, 100%, 67%, 1);
     
     --lightest-gray: hsla(0, 2%, 87%, 1);
     
@@ -459,13 +426,7 @@ Colors
     
     --muted-blue: hsla(200, 57%, 23%, 1);
     
-    --muted-purple: hsla(278, 50%, 65%, 1);
-    
-    --fairy-purple: hsla(278, 100%, 65%, 1);
-    
     --purple: hsla(284, 79%, 32%, 1);
-    
-    --bright-purple: hsla(284, 100%, 68%, 1);
     
     --gray: hsla(0, 0%, 50%, 1);
     
@@ -484,13 +445,9 @@ Colors
     
     --dark-blue: hsla(200, 85%, 25%, 1);
     
-    --muted-steel-blue: hsla(200, 85%, 18%, 1);
-    
     --darker-blue: hsla(200, 85%, 14%, 1);
     
     --darkest-blue: hsla(200, 85%, 9%, 1);
-    
-    --dark-plum: hsla(284, 69%, 15%, 1);
     
     --dark-purple: hsla(274, 38%, 17%, 1);
     
@@ -509,18 +466,28 @@ Colors
     --black: hsla(0, 0%, 0%, 1);
     
     /* ----------- TRANSLUCENT --------------- */
+
+    --trans: hsla(0, 0%, 87%, .2);
+
+    --trans-shaded: hsla(3, 0%, 30%, 0.3);
     
     --trans-white: hsla(0, 0%, 100%, 0.47);
+
+    --trans-steel: hsla(3, 0%, 87%, 0.2);
     
     --trans-bright-mint: hsla(174, 100%, 65%, 0.54);
     
     --trans-mint: hsla(174, 72%, 56%, .5);
     
     --trans-blue: hsla(200, 100%, 54%, 0.55);
-    
-    --trans-purple: hsla(284, 79%, 32%, 0.49);
 
-    --trans-darkgray: hsla(0, 0%, 20%, 1);
+    --trans-darkblue: hsla(200, 85%, 9%, .5);
+    
+    --trans-purple: hsla(284, 79%, 32%, 0.3);
+
+    --trans-darkgray: hsla(0, 0%, 20%, .3);
+
+    --trans-echo: hsla(0, 0%, 20%, 0.3);
     
     --trans-shadow: hsla(0, 0%, 20%, 0.51);
 
@@ -528,6 +495,15 @@ Colors
 
 
     }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -545,4 +521,3 @@ Colors
 =================
 ================= 
 */
-

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6afe2f0c16.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="styles-v2.css" rel="stylesheet">
+    <title>Paint like a Ross</title>
+</head>
+<body>
+
+    <header>
+
+        <nav class="mb0 mbt0 navbar">
+            <a id="logo" class="logo" href="#">Paint like a <span id="ross" class="nav-accent ross">ROSS</span><span id="boss" class="nav-accent boss">BOSS</span></a>
+
+            <a href="#" id="toggle-button" class="toggle-button">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <ul id="navbar-links" class="navbar-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <div class="wrapper">
+
+        <main>
+
+            <div id="canvas-wrapper" class="canvas-wrapper">
+
+                <div id="toolbar" class="toolbar">
+
+
+                    <!-- <div class="size">
+
+                        <label for="pen-size">Size</label>
+                            <input id="pen-size" type="range" min="1" max="50">
+
+                    </div> -->
+
+                    <div class="type">
+
+                        <input id="pen-pencil" name="pen-type" type="radio" checked>
+                        <label for="pen-pencil">
+                            <i class="fas fa-pen"></i>
+                        </label>
+
+                        <input id="pen-brush" name="pen-type" type="radio">
+                        <label for="pen-brush">
+                            <i class="fas fa-paint-brush"></i>
+                        </label>
+
+                        <input id="pen-highlighter" name="pen-type" type="radio">
+                        <label for="pen-highlighter">
+                            <i class="fas fa-highlighter"></i>
+                        </label>
+
+                        <input id="pen-fill" name="pen-type" type="radio">
+                        <label for="pen-fill">
+                            <i class="fas fa-fill"></i>
+                        </label>
+
+
+                        <input id="pen-eraser" name="pen-type" type="radio">
+                        <label for="pen-eraser">
+                            <i class="fas fa-eraser"></i>
+                        </label>
+
+                        <!-- <input id="" name="pen-type" type="radio">
+                        <label for=""> -->
+                            
+                        </label>
+                        
+
+                    </div>
+
+
+                    <div class="size">
+
+                        <label for="pen-size">Size</label>
+                            <input id="pen-size" type="range" min="1" max="50">
+
+                    </div>
+
+
+
+                    <div class="color">
+
+                        <label for="pen-color">Color</label>
+                            <input id="pen-color" type="color" value="#000000">
+
+                            <!-- ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`; -->
+
+                    </div>
+
+
+
+                    <div class="actions">
+
+                        <button id="reset-canvas" class="toolbar-btn">Clear</button>
+
+                        <button id="save-canvas" class="toolbar-btn">Save</button>
+
+                    </div>
+
+                </div> <!-- /end .toolbar -->
+
+
+
+
+                <!-- CANVAS -->
+
+                <canvas id="canvas" class="canvas"></canvas>
+
+
+
+
+
+
+
+        </div> <!-- /end .canvas-wrapper -->
+
+
+    </main>
+
+    </div> <!-- /end .wrapper-->
+    
+    <script src="script-v2.js"></script>
+    <script src="overflow-v2.js"></script>
+</body>
+</html>

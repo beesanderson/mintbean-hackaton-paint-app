@@ -37,6 +37,7 @@ const mouse = {
     x: 0, y: 0,                             // Coordinates
     lastX: 0, lastY: 0,                     // Last frames mouse position
 }
+let mousePosition = (0, 0)
 
 
 
@@ -62,7 +63,7 @@ let testDisplayCoord = document.getElementById("combo-reg-expression")
 let testMouseX = document.getElementById("mouseX")
 let testMouseY = document.getElementById("mouseY")
 let testMouseMovement = document.getElementById("mouse-position")
-let testDisplayMousePosition = document.getElementById("combo-reg-expression")
+let testMouseCanvasPOS = document.getElementById("mouse-pos-canvas")
 
 // testDisplayX.textContent = e.x
 // testDisplayY.textContent = e.y
@@ -89,7 +90,35 @@ function getMousePosition(canvas, e) {
         x: e.clientY - canvasBounds.top
     }
     
+    
 }
+
+function draw(e) {
+    if(!isDrawing) return;
+    console.log(e)
+
+    //start the path being down by accessing the context from canvas 
+    ctx.beginPath()
+
+    //moving the line from lastX to lastY
+    ctx.moveTo(lastX, lastY)
+
+    //setting/linking the lastX && lastY to the key(e) evens w e.offsetX && e.offsetY
+    ctx.lineTo(e.offsetX, e.offsetY)
+
+    //to actually draw
+    ctx.stroke()
+
+    //set lastX and lastY from correct coordinates 
+    lastX = e.offsetX
+    lastY = e.offsetY
+
+    console.log(`e.offsetY: ${ e.offsetY } && e.offsetX: ${ e.offsetX }`)
+
+    console.log(`lastX: ${ lastX } && lastY: ${ lastY }`)
+    testMouseMovement.textContent = `Drawing X: ${ lastX } && Drawing Y: ${ lastY }`
+}
+
 
 // function getMousePosition() {
 //     let canvasBounds = canvas.getBoundingClientRect()
@@ -99,6 +128,9 @@ function getMousePosition(canvas, e) {
 //     }
 // }
 
+// console.log(e.offsetX)
+// console.log(e.offsetY)
+
 
 /* ------------- Event Listeners -------------  */
 
@@ -106,15 +138,29 @@ window.addEventListener("mousemove", (e) => {
 
 })
 
-// canvas.addEventListener("mousemove", draw)
-
-canvas.addEventListener("mousemove", function (e) {
+window.addEventListener("mousemove", function (e) {
+    // getCoord(mousePosition)
     let mousePosition = getMousePosition(canvas, e)
-    testDisplayMousePosition.textContent = canvasBounds
+    testMouseCanvasPOS.textContent = `lastX: ${ lastX } && lastY: ${ lastY }`
     testMouseX.textContent = e.x
     testMouseY.textContent = e.y
 
 })
+
+canvas.addEventListener("mousemove", draw)
+
+// canvas.addEventListener("mouseup", function (e) {
+//     let mouseMovement = getMousePosition(canvas, e)
+//     testMouseMovement.textContent = 
+// })
+
+// canvas.addEventListener("mousemove", function (e) {
+//     let mousePosition = getMousePosition(canvas, e)
+//     testDisplayMousePosition.textContent = canvasBounds
+//     testMouseX.textContent = e.x
+//     testMouseY.textContent = e.y
+
+// })
 
 canvas.addEventListener("mousedown", () => isDrawing = true)
 
@@ -126,10 +172,10 @@ canvas.addEventListener('mouseout', () => isDrawing = false)
 
 
 canvas.addEventListener("click", function (e) {
-    let mousePosition = getMousePosition(canvas, e)
-    testDisplayMousePosition.textContent = canvasBounds
-    console.log(mousePosition)
+    // let mousePosition = getMousePosition(canvas, e)
+    // testDisplayMousePosition.textContent = `x: ${ e.x } | y: ${ e.y } `
 
+    getCoord(mousePosition)
 })
 
 canvas.addEventListener("dblclick", getCoord)
