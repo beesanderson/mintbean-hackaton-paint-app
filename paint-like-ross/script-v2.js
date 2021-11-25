@@ -39,6 +39,45 @@ let lastY = 0
 
 
 
+/* ------------- Functions -------------  */
+
+function draw(e) {
+
+    if(!isDrawing) return
+    console.log(e)
+
+
+    //start line
+    ctx.beginPath();
+
+    //Start from
+    ctx.moveTo(lastX, lastY)
+
+    //Go to
+    ctx.lineTo(e.offsetX, e.offsetY)
+
+    //Actually draw the line
+    ctx.stroke()
+
+    //Render Line from Coordinates 
+    lastX = e.offsetX
+    lastY = e.offsetY
+
+}
+
+function drawTriangle() {
+    ctx.beginPath();
+    ctx.moveTo(75, 50);
+    ctx.lineTo(100, 75);
+    ctx.lineTo(100, 25);
+    ctx.fill();
+}
+
+
+
+
+
+
 
 
 //my own listener to test when the window is resized and resize canvas automatically. probably won't work but hey at least I'm kind of learning something!!
@@ -72,36 +111,21 @@ canvas.addEventListener("mouseout", () => isDrawing = false)
 
 
 
-/* ------------- Functions -------------  */
+/* ------------- BUTTONS and SUCH -------------  */
 
-function draw(e) {
+/* Button Variables */
+const resetBtn = document.getElementById("reset-canvas")
+const saveBtn = document.getElementById("save-canvas")
 
-    if(!isDrawing) return
-    console.log(e)
 
+saveBtn.addEventListener('click', DownloadCanvasAsImage)
 
-    //start line
-    ctx.beginPath();
-
-    //Start from
-    ctx.moveTo(lastX, lastY)
-
-    //Go to
-    ctx.lineTo(e.offsetX, e.offsetY)
-
-    //Actually draw the line
-    ctx.stroke()
-
-    //Render Line from Coordinates 
-    lastX = e.offsetX
-    lastY = e.offsetY
-
-}
-
-function drawTriangle() {
-    ctx.beginPath();
-    ctx.moveTo(75, 50);
-    ctx.lineTo(100, 75);
-    ctx.lineTo(100, 25);
-    ctx.fill();
+function DownloadCanvasAsImage(){
+	let downloadLink = document.createElement('a')
+	downloadLink.setAttribute('download', 'PaintLikeaRoss.png')
+	canvas.toBlob(function(blob) {
+	  let url = URL.createObjectURL(blob)
+	  downloadLink.setAttribute('href', url)
+	  downloadLink.click()
+	});
 }
