@@ -141,6 +141,7 @@ Layout
  .canvas-wrapper canvas {
     position: relative;
     background: var(--white-gray);
+    /* display: block; */
 }
 
 .canvas-wrapper {

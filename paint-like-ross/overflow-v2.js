@@ -34,10 +34,10 @@ logo.addEventListener("mouseleave", e => {
 
 
 
-var testCanvas = document.getElementById("theCanvas");
-var parent = document.getElementById("parent");
-testCanvas.width = parent.offsetWidth;
-testCanvas.height = parent.offsetHeight;
+// var testCanvas = document.getElementById("theCanvas");
+// var parent = document.getElementById("parent");
+// testCanvas.width = parent.offsetWidth;
+// testCanvas.height = parent.offsetHeight;
 
 /**$(document).ready(function() {
   var canvas = document.getElementById("theCanvas");
