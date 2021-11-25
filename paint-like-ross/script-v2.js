@@ -23,11 +23,41 @@ function fitToContainer(canvas) {
 let isDrawing = false
 
 
+
+
+
+
+
+
+
+
 /* Base Stroke&Pen Settings */
-ctx.strokeStyle = '#000000'
+let color = document.getElementById("pen-color").value
+let penSize = document.getElementById("pen-size").value
+ctx.lineWidth = penSize
+ctx.strokeStyle = color
 ctx.lineJoin = 'round'
 ctx.lineCap = 'round'
-ctx.lineWidth = 10
+// ctx.lineWidth = 10
+// penSize = document.getElementById("pen-size").value
+// ctx.lineWidth = penSize
+// penType = 
+
+
+
+/* Pen-Type Default Colors? */
+// let highlighterYellow = 'hsla(60, 100%, 70%, 0.5)'
+
+
+// GRADIENTS 
+    //circular gradient
+// let gradientHighlighter = ctx.createRadialGradient(75, 50, 5, 90, 60, 100)
+// // gradientHighlighter.addColorStop(0, "hsla(60, 100%, 70%, 1)")
+// // gradientHighlighter.addColorStop(1, "hsla(360, 100%, 100%, 1)")
+// gradientHighlighter.addColorStop(0, "#ff6")
+// gradientHighlighter.addColorStop(1, "#fff")
+
+// highlighter color? hsla(60, 100%, 70%, 1)
 
 
 /* Mouse Variables */
@@ -39,12 +69,16 @@ let lastY = 0
 
 
 
-/* ------------- Functions -------------  */
+
+
+
+
+
+/* -------------------- Functions ---------------------- */
 
 function draw(e) {
-
     if(!isDrawing) return
-    console.log(e)
+    // console.log(e)
 
 
     //start line
@@ -62,8 +96,13 @@ function draw(e) {
     //Render Line from Coordinates 
     lastX = e.offsetX
     lastY = e.offsetY
-
 }
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+
 
 function drawTriangle() {
     ctx.beginPath();
@@ -75,10 +114,72 @@ function drawTriangle() {
 
 
 
+function getColor() {
+    ctx.strokeStyle = color
+    color = document.getElementById("pen-color").value
+    debugColorValue.textContent = color
+}
+
+
+function drawPencil() {
+    ctx.lineWidth = 3
+}
 
 
 
 
+// function drawHighlighter() {
+//     circle(30, 30, 20);
+// }
+
+// draw circle code? woah I did it myself again woot woot!! 
+function drawCircle() {
+    let radius = ctx.lineWidth * 1.5
+    ctx.beginPath()
+    ctx.arc(lastX, lastY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = ctx.strokeStyle;
+    // ctx.fillStyle = "red";
+    ctx.fill();
+}
+
+
+
+function drawMarker() {
+    let radius = ctx.lineWidth * 1.5
+    ctx.arc(lastX, lastY, radius, 0, Math.PI * 2);
+    ctx.beginPath()
+    ctx.stokeStyle = gradientHighlighter
+    ctx.lineWidth = 5
+
+}
+
+function fill() {
+    // ctx.beginPath()
+    // ctx.fillStyle = color
+    // ctx.fill()
+    // ctx.stroke()
+    
+    context.closePath();
+    context.lineWidth = 5;
+    context.fillStyle = '#8ED6FF';
+    context.fill();
+    context.strokeStyle = 'blue';
+    context.stroke();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- Event Listeners ----------------------- */
+/* ---------- just some. don't be greedy meow ---------- */
 
 //my own listener to test when the window is resized and resize canvas automatically. probably won't work but hey at least I'm kind of learning something!!
 
@@ -108,6 +209,22 @@ canvas.addEventListener("mouseup", () => isDrawing = false)
 
 canvas.addEventListener("mouseout", () => isDrawing = false)
 
+// canvas.addEventListener('click', drawCircle)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -129,3 +246,167 @@ function DownloadCanvasAsImage(){
 	  downloadLink.click()
 	});
 }
+
+
+resetBtn.addEventListener('click', () => {
+    console.log(resetBtn)
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    debugReset.textContent = "Cleared Canvas"
+})
+
+
+
+
+
+/* Radio Button Variables */
+const pencil = document.getElementById("pen-pencil")
+const brush = document.getElementById("pen-brush")
+const highlighter = document.getElementById("pen-highlighter")
+// const fillBucket = document.getElementById("pen-fill")
+// const sketch = document.getElementById("pen-sketch")
+const eraser = document.getElementById("pen-eraser")
+
+// const erase = () => ctx.globalCompositeOperation = 'destination-out'
+
+// const eraseDone = () => {
+//     ctx.context.globalCompositeOperation ='source-over'
+// }
+
+
+
+// const changeColor = color => {
+//     context.strokeStyle = color
+//     context.globalCompositeOperation = 'source-over' // new
+//   }
+
+
+// console.log(pencil)
+// console.log(brush)
+// console.log(highlighter)
+// console.log(fillBucket)
+// console.log(eraser)
+
+pencil.addEventListener('click', () => {
+    // eraseDone()
+    console.log(pencil)
+
+    ctx.shadowBlur = 0;
+
+
+    ctx.penSize = 10
+    ctx.strokeStyle = color
+
+
+    penType = "Pencil"
+    debugPenType.textContent = penType
+    debugPenSize.textContent = penSize
+})
+
+
+brush.addEventListener('click', () => {
+    // eraseDone()
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = color;
+
+    ctx.strokeStyle = color
+
+    penType = "Paint Brush"
+    debugPenType.textContent = penType
+    debugPenSize.textContent = penSize
+})
+
+
+highlighter.addEventListener('click', () => {
+    // eraseDone()
+    console.log(highlighter)
+    ctx.shadowBlur = 0;
+    // ctx.strokeStyle = gradientHighlighter
+    ctx.strokeStyle = 'hsla(60, 100%, 70%, 0.4)'
+
+    penType = "Highlighter"
+    debugPenType.textContent = penType
+    debugPenSize.textContent = penSize
+})
+
+
+// sketch.addEventListener('click', (e) => {
+
+
+
+//     // ctx.strokeStyle = color
+
+//     penType = "Sketch"
+//     debugPenType.textContent = penType
+//     debugPenSize.textContent = penSize
+// })
+
+// fillBucket.addEventListener('click', () => {
+//     fill()
+
+
+
+//     // ctx.strokeStyle = color
+
+//     penType = "Fill | Bucket"
+//     debugPenType.textContent = penType
+//     debugPenSize.textContent = penSize
+// })
+
+
+eraser.addEventListener('click', () => {
+
+    // erase()
+
+    penType = "Eraser"
+    debugPenType.textContent = penType
+    debugPenSize.textContent = penSize
+})
+
+
+
+
+
+
+
+/* Size & Color Button Variables */
+const sizeRangeBtn = document.getElementById("pen-size")
+const colorBtn = document.getElementById("pen-color")
+
+
+sizeRangeBtn.addEventListener('click', () => {
+    console.log(sizeRangeBtn)
+    penSize = document.getElementById("pen-size").value
+    ctx.lineWidth = penSize
+    // debugPenWidth.textContent = `Pen Size: ${ penSize } & ctx.lineWidth: ${ ctx.lineWidth }`
+
+    debugPenWidth.textContent = penSize
+
+})
+
+// penSize = document.getElementById("pen-size").value
+// ctx.lineWidth = penSize
+
+
+colorBtn.addEventListener('click', () => {
+    ctx.strokeStyle = color
+    color = document.getElementById("pen-color").value
+    debugColorValue.textContent = color
+
+    
+    
+
+})
+
+
+
+
+
+
+/* -------------------- DeBuGgInG StUfF ----------------------- */
+
+const debugPenWidth = document.getElementById("pen-width")
+const debugPenType = document.getElementById("utensil")
+const debugColorValue = document.getElementById("color-value")
+const debugReset = document.getElementById("clear-canvas")
+const debugPenSize = document.getElementById("pen-size")

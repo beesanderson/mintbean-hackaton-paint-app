@@ -31,6 +31,17 @@ logo.addEventListener("mouseleave", e => {
 
 
 
+/* -------------------- DeBuGgInG StUfF ----------------------- */
+
+// const debugPenWidth = document.getElementById("pen-width")
+// const debugPenType = document.getElementById("utensil")
+// const debugColorValue = document.getElementById("color-value")
+
+
+
+
+
+
 
 
 

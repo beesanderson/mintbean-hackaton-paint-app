@@ -206,6 +206,12 @@ canvas {
     width: 800px; */
 }
 
+/* .message-box {
+    background: var(--dark-blue);
+    height: 100px;
+    width: 100px;
+} */
+
 /* ---- App Paint Controls ----  */
 .controls {
     background: var(--trans-mint);

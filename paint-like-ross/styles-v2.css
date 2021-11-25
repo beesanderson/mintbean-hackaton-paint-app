@@ -132,6 +132,10 @@ Layout
     padding: 2em;
 }
 
+.flex-container {
+    display: flex;
+}
+
 
 
 
@@ -153,6 +157,22 @@ Layout
     border-right: var(--deep-mint) solid 4px;
     /* centering interior canvas */
     text-align: center;
+}
+
+.test-container {
+    color: var(--dark-plum);
+    border-bottom: 5px dotted var(--trans-purple);
+    justify-content: space-between;
+}
+
+.debug-box {
+    padding-right: 1em;
+    padding-bottom: .5em;
+}
+
+.debug-box h2 {
+    margin-top: .5em;
+    font-size: 1.2rem;
 }
 
 
@@ -320,9 +340,36 @@ Layout
 }
 
 
+/* ----------- debug ya container crap -----------  */
 
+.test-container {
+    color: var(--dark-plum);
+    border-bottom: 5px dotted var(--trans-purple);
 
+}
 
+.debug-box {
+    padding-right: 1em;
+    padding-bottom: .5em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.debug-box h2 {
+    margin-top: .5em;
+    font-size: 1.2rem;
+}
+
+.debug-box h2 span {
+    background: var(--trans-mint);
+    border-right: 2px solid var(--deep-accent);
+    border-top: .1px solid var(--muted-purple);
+    border-left: .2px solid var(--muted-purple);
+    border-bottom: 4px solid var(--deep-accent);
+    margin: .5rem;
+    padding: .1rem .5rem;
+}
 
 
 
