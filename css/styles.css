@@ -6,10 +6,16 @@
 
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     text-align: center;
     font-size: 1.5rem;
 }
+
 
 a {
     text-decoration: none;
@@ -78,6 +84,27 @@ a:focus {
     border-top: 1px solid #40e0d0;
     border-bottom: 1px solid #40e0d0;
 }
+
+header p {
+    font-size: 1rem;
+    border: 5px dotted turquoise;
+    padding: 2em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+header p:hover, 
+header p:focus {
+    font-size: .9rem;
+    padding: 1.4em;
+}
+
+header a:hover,
+header a:focus {
+    display: block;
+    font-size: 3rem!important;
+}
+
 
 
 .btn {
@@ -214,6 +241,13 @@ a:focus {
     font-size: 3rem;
 }
 
+
+header a:hover,
+header a:focus {
+    display: block;
+    font-size: 3rem!important;
+}
+
 .date {
     font-size: 1rem;
     font-weight: 100;
@@ -248,3 +282,215 @@ a:focus {
 footer {
     width: 90%;
 }
+
+
+
+/* 
+=================
+Navbar
+================= 
+*/
+
+/* ----------- Hamburger Menu --------------- */
+
+.navbar {
+    background: var(--dark-gray);
+    overflow: hidden;
+    position: relative;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--mint);
+    color: black;
+    display: block;
+  }
+
+.navbar a {
+    /* color: #fff; */
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    padding: .5em;
+    font-size: 2rem;
+
+}
+
+.navbar-links {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 900;
+    /* display: block; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: none;
+}
+
+.toggle-button {
+    background: var(--mint);
+    color: var(--semi-black)!important;
+    right: 0;
+    top: 0;
+    display: block;
+    position: absolute;
+    padding: .5em;
+    font-size: 2rem;
+}
+
+.toggle-button:hover {
+    color: var(--white)!important;
+}
+
+.navbar-links.active {
+    display: block;
+}
+
+.navbar-links li a {
+    display: block;
+    padding: 1em 0;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+/* ----------- Desktop Menu --------------- */
+
+
+
+/* @media (max-width: 715px) {
+    .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    }
+    .navbar-links li {
+    margin: 5px 0;
+    }  */
+
+
+
+
+
+/* 
+=================
+Colors
+================= 
+*/
+
+:root {
+
+    /* ------------ LIGHT -------------- */
+    
+    --light-pink: hsla(296, 100%, 73%, 1);
+    
+    --light-mint: hsla(174, 96%, 85%, 1);
+    
+    --bright-mint: hsla(174, 100%, 56%, 1);
+    
+    --mute-mint: hsla(174, 19%, 60%, 1);
+    
+    --light-blue: hsla(200, 85%, 54%, 1);
+    
+    --light-muted-blue: hsla(200, 57%, 60%, 1);
+    
+    --light-purple: hsla(284, 100%, 67%, 1);
+    
+    --lightest-gray: hsla(0, 2%, 87%, 1);
+    
+    --lighter-gray: hsla(0, 0%, 74%, 1);
+    
+    --light-gray: hsla(0, 2%, 71%, 1); 
+
+    --white-gray: hsla(0, 0%, 87%, 1);
+    
+    --white: hsla(0, 0%, 100%, 1);
+    
+    
+    /* ------------ MEDIUM -------------- */
+    
+    --accent: hsla(174, 72%, 56%, 1);
+    
+    --mint: hsla(174, 72%, 56%, 1);
+    
+    --deep-mint: hsla(174, 58%, 34%, 1);
+    
+    --blue: hsla(200, 85%, 29%, 1);
+    
+    --bright-blue: hsl(225, 72%, 56%);
+    
+    --muted-blue: hsla(200, 57%, 23%, 1);
+    
+    --muted-purple: hsla(278, 50%, 65%, 1);
+    
+    --fairy-purple: hsla(278, 100%, 65%, 1);
+    
+    --purple: hsla(284, 79%, 32%, 1);
+    
+    --bright-purple: hsla(284, 100%, 68%, 1);
+    
+    --gray: hsla(0, 0%, 50%, 1);
+    
+    --anchor-gray: hsla(235, 8%, 28%, 1);
+    
+    
+    
+    /* ----------- DARK -------------- */
+    
+    
+    --dark-mint: hsla(174, 72%, 28%, 1);
+    
+    --darker-mint: hsla(174, 63%, 18%, 1);
+    
+    --darkest-mint: hsla(174, 32%, 12%, 1);
+    
+    --dark-blue: hsla(200, 85%, 25%, 1);
+    
+    --muted-steel-blue: hsla(200, 85%, 18%, 1);
+    
+    --darker-blue: hsla(200, 85%, 14%, 1);
+    
+    --darkest-blue: hsla(200, 85%, 9%, 1);
+    
+    --dark-plum: hsla(284, 69%, 15%, 1);
+    
+    --dark-purple: hsla(274, 38%, 17%, 1);
+    
+    --deep-accent: hsla(237, 27%, 17%, 1);
+    
+    --deepest-accent: hsla(237, 27%, 10%, 1);
+    
+    --shadow: hsla(0, 0%, 22%, 1);
+    
+    --dark-gray: hsla(0, 0%, 20%, 1);
+
+    --purple-rain: hsla(264, 29%, 3%, 1);
+    
+    --semi-black: hsla(0, 0%, 15%, 1);
+    
+    --black: hsla(0, 0%, 0%, 1);
+    
+    /* ----------- TRANSLUCENT --------------- */
+    
+    --trans-white: hsla(0, 0%, 100%, 0.47);
+    
+    --trans-bright-mint: hsla(174, 100%, 65%, 0.54);
+    
+    --trans-mint: hsla(174, 72%, 56%, .5);
+    
+    --trans-blue: hsla(200, 100%, 54%, 0.55);
+    
+    --trans-purple: hsla(284, 79%, 32%, 0.49);
+
+    --trans-darkgray: hsla(0, 0%, 20%, 1);
+    
+    --trans-shadow: hsla(0, 0%, 20%, 0.51);
+
+    --trans-black: hsla(0, 0%, 0%, 0.51);
+
+
+    }
