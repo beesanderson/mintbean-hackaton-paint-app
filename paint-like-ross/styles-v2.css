@@ -138,6 +138,10 @@ Layout
 
 /* ----------- Specific Layout Classes -----------  */
 
+ .canvas-wrapper canvas {
+    position: relative;
+    background: var(--white-gray);
+}
 
 .canvas-wrapper {
     background: var(--trans-mint);
@@ -146,7 +150,87 @@ Layout
     border-left: var(--deep-mint) solid .5px;
     border-bottom: var(--deep-mint) solid 2px;
     border-right: var(--deep-mint) solid 4px;
+    /* centering interior canvas */
+    text-align: center;
 }
+
+
+/* ---- CANVAS MOBILE View ----  */
+.canvasParent {
+    width: 600px;
+    height: 600px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+@media (min-width: 450px) {
+    .canvasParent {
+        width: 425px;
+        height: 600px;
+        max-width: 425px;
+        max-height: 600px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 300px) {
+    .canvasParent {
+        width: 325px;
+        height: 450px;
+        max-width: 375px;
+        max-height: 450px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* ---- CANVAS DESKTOP View ----  */
+
+@media (min-width: 600px) {
+    .canvasParent {
+        width: 550px;
+        height: 600px;
+        max-width: 600px;
+        max-height: 800px;
+    }
+}
+
+
+@media (min-width: 715px) {
+    .canvasParent {
+        width: 600px;
+        height: 600px;
+        max-width: 800px;
+        max-height: 600px;
+    }
+}
+
+@media (min-width: 900px) {
+    .canvasParent {
+        width: 800px;
+        height: 650px;
+        max-width: 800px;
+        max-height: 700px;
+    }
+}
+
+/* ---- CANVAS DEBUG FRIEND GUY ----  */
+
+/* #parent {
+    background-color:blue;
+    width:200px;
+    height:200px; 
+    margin: 2em;
+}
+
+#theCanvas {
+    background: red;
+} */
+
+
+
 
 
 
@@ -220,12 +304,21 @@ Layout
 
 /* ---- DESKTOP App Paint Controls ----  */
 
+/* @media (min-width: 700px) {
+    .toolbar .type {
+        display: flex;
+        flex-wrap: nowrap;
+    }   
+} */
+
 @media (min-width: 600px) {
     .toolbar {
         flex-direction: row;
         justify-content: space-evenly;
     }   
 }
+
+
 
 
 
