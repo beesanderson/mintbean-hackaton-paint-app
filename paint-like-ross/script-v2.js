@@ -120,8 +120,7 @@ function drawMarker() {
 
 }
 
-function fill() {
-    
+function fill() {  
     context.closePath();
     context.lineWidth = 5;
     context.fillStyle = '#8ED6FF';
@@ -131,7 +130,14 @@ function fill() {
 }
 
 
+function defaultPen() {
 
+    ctx.lineJoin = 'round'
+    ctx.lineCap = 'round'
+    ctx.strokeStyle = color
+    ctx.lineWidth = penSize
+
+}
 
 
 
@@ -146,6 +152,9 @@ function fill() {
 
 window.addEventListener("resize", (e) => {
     fitToContainer(canvas) 
+    defaultPen()
+    // ctx.lineJoin = 'round'
+    // ctx.lineCap = 'round'
 }) 
 
 
@@ -203,6 +212,7 @@ function DownloadCanvasAsImage(){
 resetBtn.addEventListener('click', () => {
     console.log(resetBtn)
     ctx.clearRect(0, 0, canvas.width, canvas.height)
+
 })
 
 
@@ -213,7 +223,7 @@ resetBtn.addEventListener('click', () => {
 const pencil = document.getElementById("pen-pencil")
 const brush = document.getElementById("pen-brush")
 const highlighter = document.getElementById("pen-highlighter")
-const eraser = document.getElementById("pen-eraser")
+// const eraser = document.getElementById("pen-eraser")
 
 
 
@@ -222,7 +232,7 @@ const eraser = document.getElementById("pen-eraser")
 pencil.addEventListener('click', () => {
     console.log(pencil)
     ctx.shadowBlur = 0;
-    ctx.penSize = 10
+    // ctx.penSize = 10
     ctx.strokeStyle = color
     penType = "Pencil"
 })
@@ -231,7 +241,7 @@ pencil.addEventListener('click', () => {
 brush.addEventListener('click', () => {
 
     ctx.shadowBlur = 10;
-    ctx.shadowColor = color;
+    ctx.shadowColor = document.getElementById("pen-color").value;
 
     ctx.strokeStyle = color
 
@@ -250,10 +260,10 @@ highlighter.addEventListener('click', () => {
 
 
 
-eraser.addEventListener('click', () => {
-    //one day...one day...
+// eraser.addEventListener('click', () => {
+//     //one day...one day...
 
-})
+// })
 
 
 
@@ -277,8 +287,11 @@ sizeRangeBtn.addEventListener('click', () => {
 
 
 colorBtn.addEventListener('click', () => {
-    ctx.strokeStyle = color
     color = document.getElementById("pen-color").value
+    
+
+    ctx.strokeStyle = color
+    ctx.shadowColor = color
 })
 
 
